@@ -3,7 +3,7 @@ Jordan Micah Bennett, software engineer/creator of ["RobotizeJa"](https://github
 # SMART-SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR
 The aim is to develop a quick way to detect the nCov 2019 (Coronavirus 2019/2020, also called "Covid-19") strain, with the plan to use artificial neural networks or other machine learning model types.
 
-This project began on January 29, 2020, [here](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR).
+This project began on January 29, 2020, here: [SMART-CORONA_VIRUS_DETECTOR](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR).
 
 # WORLD HEALTH ORGANIZATION (WHO) WARNING
 [Coronavirus: Whole world 'must take action', warns WHO](https://www.bbc.com/news/world-asia-china-51299195)  
@@ -32,3 +32,16 @@ This project began on January 29, 2020, [here](https://github.com/JordanMicahBen
 
 # DATA
 [Images](http://images.rsna.org/index.html?doi=10.1148/radiol.2020200274&fig=fig4d) from CT Scan analysis papers, such as [this one](https://pubs.rsna.org/doi/full/10.1148/radiol.2020200274).
+
+
+
+# REAL TIME TRACKING OF NCOV 2019/2020
+
+By extension, [the tool by researchers at John Hopkins University](https://edition.cnn.com/2020/01/29/health/coronavirus-map-real-time-tracking-trnd/index.html) below, is useful for real time tracking of nCov:
+
+![Alt Text](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR/blob/master/nCov%20tracking.png?raw=true)
+
+https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
+
+Note that despite the ~900+ infection-case number reported via China on January 24, by stark contrast, a [medical scientific paper estimated that ~105,000+ infections actually occured at that time](https://www.medrxiv.org/content/10.1101/2020.01.23.20018549v2.full.pdf). All sources thus far ought to be scrutinized, as is typical in scientfic endeavour.
+
