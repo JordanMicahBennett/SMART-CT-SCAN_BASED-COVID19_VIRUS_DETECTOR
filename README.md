@@ -1,7 +1,9 @@
 Jordan Micah Bennett, software engineer/creator of ["RobotizeJa"](https://github.com/JordanMicahBennett/ROBOTIZE_JA).
 
-# SMART-NCOV-CORONA_VIRUS_DETECTOR
+# SMART-SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR
 The aim is to develop a quick way to detect the nCov 2019 (Coronavirus 2019/2020, also called "Covid-19") strain, with the plan to use artificial neural networks or other machine learning model types.
+
+This project began on January 29, 2020, [here](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR).
 
 # WORLD HEALTH ORGANIZATION (WHO) WARNING
 [Coronavirus: Whole world 'must take action', warns WHO](https://www.bbc.com/news/world-asia-china-51299195)  
