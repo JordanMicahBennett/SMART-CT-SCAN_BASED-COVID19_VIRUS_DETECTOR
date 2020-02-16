@@ -34,7 +34,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 1. Covid-19/Coronavirus2019/nCov share many similarities with pnuemonia. In fact, the [time course evolution of a specific strain of covid-19 pnuemonia is studied here.](https://pubs.rsna.org/doi/10.1148/radiol.2020200370)
 
-2. There are already existent pneumonia deep learning platforms, including kaggle contets rife with [deep learning kernels/solutions, pertaining to pnuemonia detection](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia).
+2. There are already existent pneumonia deep learning platforms, including kaggle contents rife with [deep learning kernels/solutions, pertaining to pnuemonia detection](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia).
 
 3. [A pretrained neural network is chosen from google](https://github.com/JohnChangUK/Pneumonia-Kaggle), pertaining to (2). Pretrained model usage [is a way to avoid training on the 2 gigabytes of pneumonia/non-pneumonia training set](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/download).
     * I added a quick function "doOnlineInference" to [the code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/test_model_prediction.py). This is a convenient way to invoke diagnosis on input image.
@@ -49,7 +49,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
     * This could be a good/preliminary sign that this tool could be used to actively detect novel coronavirus cases from CT scans.
 
 7. **Preliminary Conclusion**
-    * This will reasonably work on potential mild-covid-19 pneumonia patients, within ~0 to 4 days of infection, with "repeated pulmonary CTs, where positive findings of pneumonia associated abnormalities are discoverable.
+    * This will reasonably work on potential mild-covid-19 pneumonia patients, within ~0 to 4 days of infection, with "repeated pulmonary CTs", where positive findings of pneumonia associated abnormalities are discoverable.
     * This will likely work better for patients after ~5 days of infection of covid-19, as abnormailities become distributed accross the lungs, where initial CT scans could better discover the Covid-19 markers.
     * See [the paper's conclusion](https://pubs.rsna.org/doi/10.1148/radiol.2020200370) for the reasoning above.
     
