@@ -5,6 +5,9 @@ The aim is to develop a quick way to detect the nCov 2019 (Coronavirus 2019/2020
 
 This project began on January 29, 2020, here: [SMART-CORONA_VIRUS_DETECTOR](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR).
 
+As this is the first known attempt, [commencing on January 29 2020](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR/commit/49984b40847eb168800f0874bae7f8a0f2e20991) aimed collaborating to construct this type of program, please point to open source packages with similar goals. Please email jordanmicahbennett@gmail.com.
+
+
 # WORLD HEALTH ORGANIZATION (WHO) WARNING
 [Coronavirus: Whole world 'must take action', warns WHO](https://www.bbc.com/news/world-asia-china-51299195)  
 [Update Jan 31, 2020/WHO declares the new coronavirus outbreak a Public Health Emergency of International Concern](https://www.who.int/news-room/detail/30-01-2020-statement-on-the-second-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov))
