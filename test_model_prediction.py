@@ -8,7 +8,7 @@ import numpy as np
 
 model = load_model('vgg19.h5',compile=False) #Note by Jordan: compile=False added to resolve "Unexpected keyword passed to optimizer error. This error is caused by tensorflow/keras mismatch, since keras upgrade since original author wrote code.
 
-#function written by Jordan to simply collate prediction given image path, based on code above
+#function written by Jordan to simply collate prediction given image path, based on original code https://github.com/JohnChangUK/Pneumonia-Kaggle/blob/master/test_model_prediction.ipynb
 def doOnlineInference (imagePath):
     input_image = image.load_img(imagePath, target_size=(224, 224))
     input_image_array = image.img_to_array(input_image)
