@@ -22,12 +22,33 @@ This project began on January 29, 2020, here: [SMART-CORONA_VIRUS_DETECTOR](http
 * Current diagnosis methods may miss the presence of the virus due to [faulty dna based comparison methods, where multiple negative test results may occur before positive results are gained.](https://www.bbc.co.uk/news/health-51491763)
 * This ai driven method will reasonably help to **stop** [the exponential growth](http://www.renewamerica.com/columns/cherry/200126) of the nCov strain. 
     * 1 more month of exponential nCov growth = [~ 115 million cases, (of which ~ 23 million are potentially life threatening ones)](https://www.youtube.com/watch?v=Yq3Y9rmlEQE) according to [an epidemiologist/PhD pathologist](https://en.wikipedia.org/wiki/Christopher_Martenson).
+    
+
+# DEEP LEARING CODE/TESTS + CODE DISCUSSION & CALL FOR CONTRIBUTION
+
+**Code**
+
+1. Covid-19/Coronavirus2019/nCov share many similarities with pnuemonia. In fact, the [time course evolution of a specific strain of covid-19 pnuemonia is studied here.](https://pubs.rsna.org/doi/10.1148/radiol.2020200370)
+
+2. There are already existend pneumonia deep learning platforms, including kaggle contets rife with [deep learning kernels/solutions, pertaining to pnuemonia detection](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia).
+
+3. A pretrained neural network is chosen from google, pertaining to (2). Pretrained model usage [is a way to avoid training on the 2 gigabytes of pneumonia/non-pneumonia training set](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/download).
+  * A function "doOnlineInference" is added to 
+
+4. A covid-19 positive Ct scan is taken from [figure 1a](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200028&fig=fig1a) of this [recent covid-19 paper](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200028).
+
+**Code setup**
+1. Download [my version of the code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/test_model_prediction.py) from this repository.
+2. Download the [saved weights](https://github.com/JohnChangUK/Pneumonia-Kaggle/blob/master/vgg19.h5) from the original repository, and ensure both the code and weights is in same place.
+3. Download the [2 gigabytes training/test data from kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/download).
+4. Run doOnlineInference function on any of the test data from the 2 gigabytes kaggle directory, or on the single positive covid-19 example [seen in this repository](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/ct-scans/covid-19-positive/coronavirus_positive_WeifangKong_et-al.png), that was taken from [figure 1a](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200028&fig=fig1a) of this [recent covid-19 paper](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200028).
 
 
-# CALL FOR CONTRIBUTION
+**CT Scan Manual Diagnosis and Explosion in infection reports**
 
 [CT Scan based diagnostic by human radiologists, have outpaced dna testing, and had lent to China's report of ~15,000 cases overnight.](https://www.auntminnie.com/index.aspx?sec=sup&sub=cto&pag=dis&itemId=128140) 
 * By extension, apart from human radiologist detection, perhaps an ai based image detection solution can speed up diagnosis, and help to replace the [faulty dna based comparison phase](https://www.bbc.co.uk/news/health-51491763). I've requested CT image data from a scientist involved with [manual diagnosis using CT scan data](https://pubs.rsna.org/doi/pdf/10.1148/radiol.2020200274).
+
 
 
 # DATA
