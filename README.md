@@ -38,10 +38,18 @@ This project began on January 29, 2020, here: [SMART-CORONA_VIRUS_DETECTOR](http
 
 4. A covid-19 positive Ct scan is taken from [figure 1a](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200028&fig=fig1a) of this [recent covid-19 paper](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200028).
 
-5. The function from (3) was invoked on (4), and it was successfully detected as covid-19 positive. This could be a good/preliminary sign that this tool could be used to actively detect novel coronavirus cases from CT scans.
+5. A covid-19 positive Ct scan is taken from [figure 1](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200034&fig=fig1) of this [another covid-19 paper](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200034).
+
+6. The function from (3) was invoked on (4), and it was successfully detected as covid-19 positive, aka high confidence of pnuemonia. The function from (3) was also invoked on (5), although that prediction had a very low confidence that the input was normal/non-pneumonia. 
+    * [Deep learning based upscaling](https://github.com/JordanMicahBennett/EINSTEIN-BLACK-HOLE-PHOTOGRAPH-ENHANCEMENT/blob/master/README.md) was applied to input image 5, which was of low resolution compared to the training data from kaggle. 
+    * Upscaling changed the results for input (5) where the model predicted even lower confidence of non-pnuemonia i.e. closer to ground truth, but UPSCALING did not change the result for input (4) which was initially high/closer in resolution to the smallest res sample in the kaggle dataset. 
+    * This could be a good/preliminary sign that this tool could be used to actively detect novel coronavirus cases from CT scans.
+
+7. **Preliminary Conclusion**
     * This will reasonably work on potential mild-covid-19 pneumonia patients, within ~0 to 4 days of infection, with "repeated pulmonary CTs, where positive findings of pneumonia associated abnormalities are discoverable.
     * This will likely work better for patients after ~5 days of infection of covid-19, as abnormailities become distributed accross the lungs, where initial CT scans could better discover the Covid-19 markers.
     * See [the paper's conclusion](https://pubs.rsna.org/doi/10.1148/radiol.2020200370) for the reasoning above.
+    
 
 **Code setup**
 1. Download [my version of the code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/test_model_prediction.py) from this repository.
@@ -58,9 +66,9 @@ This project began on January 29, 2020, here: [SMART-CORONA_VIRUS_DETECTOR](http
 
 
 # DATA
-[Images](http://images.rsna.org/index.html?doi=10.1148/radiol.2020200274&fig=fig4d) from CT Scan analysis papers, such as [this one](https://pubs.rsna.org/doi/full/10.1148/radiol.2020200274).
+1. [Images](http://images.rsna.org/index.html?doi=10.1148/radiol.2020200274&fig=fig4d) from recent covid-19 study: ["Imaging Profile of the COVID-19 Infection: Radiologic Findings and Literature Review"](https://pubs.rsna.org/doi/full/10.1148/radiol.2020200274)
 
-
+2. [Images](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200034&fig=fig1) from recent covid-19 study: ["Imaging Profile of the COVID-19 Infection: Radiologic Findings and Literature Review"](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200034)
 
 # REAL TIME TRACKING OF NCOV 2019/2020
 
