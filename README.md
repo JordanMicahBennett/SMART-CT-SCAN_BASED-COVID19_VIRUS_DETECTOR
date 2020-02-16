@@ -26,6 +26,7 @@ This project began on January 29, 2020, here: [SMART-CORONA_VIRUS_DETECTOR](http
 
 # DEEP LEARING CODE/TESTS + CODE DISCUSSION & CALL FOR CONTRIBUTION
 
+
 **Code**
 
 1. Covid-19/Coronavirus2019/nCov share many similarities with pnuemonia. In fact, the [time course evolution of a specific strain of covid-19 pnuemonia is studied here.](https://pubs.rsna.org/doi/10.1148/radiol.2020200370)
@@ -36,6 +37,11 @@ This project began on January 29, 2020, here: [SMART-CORONA_VIRUS_DETECTOR](http
   * I added a quick function "doOnlineInference" is added to [the code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/test_model_prediction.py). This is a convenient way to invoke on input image.
 
 4. A covid-19 positive Ct scan is taken from [figure 1a](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200028&fig=fig1a) of this [recent covid-19 paper](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200028).
+
+5. The function from (3) was invoked on (4), and it was successfully detected as covid-19 positive. 
+    * This will reasonably work on potential mild-covid-19 pneumonia patients, within ~0 to 4 days of infection, with "repeated pulmonary CTs, where positive findings of pneumonia associated abnormalities are discoverable.
+    * This will likely work better for patients after ~5 days of infection of covid-19, as abnormailities become distributed accross the lungs, where initial CT scans could better discover the Covid-19 markers.
+    * See [the paper's conclusion](https://pubs.rsna.org/doi/10.1148/radiol.2020200370) for the reasoning above.
 
 **Code setup**
 1. Download [my version of the code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/test_model_prediction.py) from this repository.
