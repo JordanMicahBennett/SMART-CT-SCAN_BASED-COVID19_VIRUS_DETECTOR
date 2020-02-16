@@ -43,7 +43,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 5. Another covid-19 positive Ct scan is taken from [figure 1](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200034&fig=fig1) of [this covid-19 paper](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200034).
 
-6. The function from (3) was invoked on (4), and it was successfully detected as covid-19 positive, aka high confidence of pnuemonia. The function from (3) was also invoked on (5), although that prediction had a very low confidence that the input was normal/non-pneumonia. 
+6. The function from (3) was invoked on (4), and (4) was successfully detected as covid-19 positive, aka high confidence of pnuemonia. The function from (3) was also invoked on (5), although that prediction had a very low confidence that the input was normal/non-pneumonia. 
     * [Deep learning based upscaling](https://github.com/JordanMicahBennett/EINSTEIN-BLACK-HOLE-PHOTOGRAPH-ENHANCEMENT/blob/master/README.md) was applied to input image 5, which was of low resolution compared to the training data from kaggle. 
     * Upscaling changed the results for input (5) where the model predicted even lower confidence of non-pnuemonia i.e. closer to ground truth, but UPSCALING did not change the result for input (4) which was initially high/closer in resolution to the smallest res sample in the kaggle dataset. 
     * This could be a good/preliminary sign that this tool could be used to actively detect novel coronavirus cases from CT scans.
