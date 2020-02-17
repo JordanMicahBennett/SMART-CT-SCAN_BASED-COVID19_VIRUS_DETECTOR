@@ -70,7 +70,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 
 # DATA
-1. [Images](http://images.rsna.org/index.html?doi=10.1148/radiol.2020200274&fig=fig4d) from recent covid-19 study: ["Imaging Profile of the COVID-19 Infection: Radiologic Findings and Literature Review"](https://pubs.rsna.org/doi/full/10.1148/radiol.2020200274)
+1. [Images](http://images.rsna.org/index.html?doi=10.1148/radiol.2020200274&fig=fig4d) from recent covid-19 study: ["Emerging Coronavirus 2019-nCoV Pneumonia"](https://pubs.rsna.org/doi/full/10.1148/radiol.2020200274)
 
 2. [Images](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200034&fig=fig1) from recent covid-19 study: ["Imaging Profile of the COVID-19 Infection: Radiologic Findings and Literature Review"](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200034)
 
