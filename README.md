@@ -27,14 +27,14 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
     * 1 more month of exponential nCov growth = [~ 115 million cases, (of which ~ 23 million are potentially life threatening ones)](https://www.youtube.com/watch?v=Yq3Y9rmlEQE) according to [an epidemiologist/PhD pathologist](https://en.wikipedia.org/wiki/Christopher_Martenson).
     
 
-# DEEP LEARING CODE/TESTS + CODE DISCUSSION & CALL FOR CONTRIBUTION
+# DEEP LEARNING CODE/TESTS + CODE DISCUSSION & CALL FOR CONTRIBUTION
 
 
 **Code**
 
-1. Covid-19/Coronavirus2019/nCov share many similarities with pnuemonia. In fact, the [time course evolution of a specific strain of covid-19 pnuemonia is studied here.](https://pubs.rsna.org/doi/10.1148/radiol.2020200370)
+1. Covid-19/Coronavirus2019/nCov share many similarities with pneumonia. In fact, the [time course evolution of a specific strain of covid-19 pneumonia is studied here.](https://pubs.rsna.org/doi/10.1148/radiol.2020200370)
 
-2. There are already existent pneumonia deep learning platforms, including kaggle contents rife with [deep learning kernels/solutions, pertaining to pnuemonia detection](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia).
+2. There are already existent pneumonia deep learning platforms, including kaggle contents rife with [deep learning kernels/solutions, pertaining to pneumonia detection](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia).
 
 3. [A pretrained neural network is chosen from google](https://github.com/JohnChangUK/Pneumonia-Kaggle), pertaining to (2). Pretrained model usage [is a way to avoid training on the 2 gigabytes of pneumonia/non-pneumonia training set](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/download).
     * I added a quick function "doOnlineInference" to [the code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/test_model_prediction.py). This is a convenient way to invoke diagnosis on input image.
@@ -43,9 +43,9 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 5. Another covid-19 positive Ct scan is taken from [figure 1](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200034&fig=fig1) of [this covid-19 paper](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200034).
 
-6. The function from (3) was invoked on (4), and (4) was successfully detected as covid-19 positive, aka high confidence of pnuemonia. The function from (3) was also invoked on (5), although that prediction had a very low confidence that the input was normal/non-pneumonia. 
+6. The function from (3) was invoked on (4), and (4) was successfully detected as covid-19 positive, aka high confidence of pneumonia. The function from (3) was also invoked on (5), although that prediction had a very low confidence that the input was normal/non-pneumonia. 
     * [Deep learning based upscaling](https://github.com/JordanMicahBennett/EINSTEIN-BLACK-HOLE-PHOTOGRAPH-ENHANCEMENT/blob/master/README.md) was applied to input image 5, which was of low resolution compared to the training data from kaggle. 
-    * Upscaling changed the results for input (5) where the model predicted even lower confidence of non-pnuemonia i.e. closer to ground truth, but UPSCALING did not change the result for input (4) which was initially high/closer in resolution to the smallest res sample in the kaggle dataset. 
+    * Upscaling changed the results for input (5) where the model predicted even lower confidence of non-pneumonia i.e. closer to ground truth, but UPSCALING did not change the result for input (4) which was initially high/closer in resolution to the smallest res sample in the kaggle dataset. 
     * This could be a good/preliminary sign that this tool could be used to actively detect novel coronavirus cases from CT scans.
 
 7. **Preliminary Conclusion**
