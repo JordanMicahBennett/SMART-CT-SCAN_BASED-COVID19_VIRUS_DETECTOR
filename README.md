@@ -10,7 +10,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 * This can also reasonably allow for less experienced medical personnel to make preliminary diagnoses, expanding the diagnosis efforts overall. This effort may contribute towards virus-control progress, together with [other ai based endeavours being developed accross the globe, such as use of ai for vaccine development.](https://www.facebook.com/ProgrammingGodJordan/posts/876578989467795)
 
 # CT Test Result Time/Dna Method Comparison
-* [Molecular and Serology Tests](http://www.jamaicaobserver.com/latestnews/Jamaica_can_now_test_for_COVID-19): Up to [**5 days** before results are returned.](https://www.cdc.gov/coronavirus/mers/lab/lab-testing.html
+* [Molecular and Serology Tests](http://www.jamaicaobserver.com/latestnews/Jamaica_can_now_test_for_COVID-19): Up to [**5 days** before results are returned.](https://www.cdc.gov/coronavirus/mers/lab/lab-testing.html)
 * [CT Image Scan + Artificial Intelligence Diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR): ~5 minutes ([for scan](https://www.ielcap.org/library/lung-cancer-screening/faqs)) + A few milliseconds for [Ai diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR) = **~6 minutes total** time for diagnosis result including possible image processing
 
 # WORLD HEALTH ORGANIZATION (WHO) WARNING
