@@ -7,7 +7,7 @@ This project began on January 29, 2020, here: [SMART-CORONA_VIRUS_DETECTOR](http
 
 As this is the first known attempt, [commencing on January 29 2020](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR/commit/49984b40847eb168800f0874bae7f8a0f2e20991) aimed collaborating to construct this type of program, please point to open source packages with similar goals. Please email jordanmicahbennett@gmail.com.
 
-This can also reasonably allow for less experienced medical personell to make diagnoses, expanding the diagnosis effort overall.
+* This can also reasonably allow for less experienced medical personell to make diagnoses, expanding the diagnosis efforts overall.
 
 
 # WORLD HEALTH ORGANIZATION (WHO) WARNING
