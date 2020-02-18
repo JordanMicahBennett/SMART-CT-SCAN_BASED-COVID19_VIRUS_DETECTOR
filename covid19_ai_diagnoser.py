@@ -15,11 +15,12 @@ def doOnlineInference (imagePath):
     image_array_expanded = np.expand_dims(input_image_array, axis = 0)
     image_array_expanded_preprocessed = preprocess_input(image_array_expanded)
     prediction = model.predict(image_array_expanded_preprocessed)
-    print ( "Normal with (" + str( round( prediction[0][0]*100, 3 )) + ")% confidence." )
-    print ( "Coronavirus Pneumonia with ("  + str( round( prediction[0][1]*100, 3 ) ) + ")% confidence." )
-    print ( "Raw neural network output array [normal,pneumonia] ~> [" + str( round( prediction[0][0], 3 )) + "," + str( round( prediction[0][1], 3 )) + "]\n\n" )
+    outputContent = "Normal with (" + str( round( prediction[0][0]*100, 3 )) + "%) confidence.\n\n"
+    outputContent += "Coronavirus Pneumonia with ("  + str( round( prediction[0][1]*100, 3 ) ) + "%) confidence.\n\n" 
+    outputContent += "Raw neural network output array [normal,pneumonia] ~> [" + str( round( prediction[0][0], 3 )) + "," + str( round( prediction[0][1], 3 )) + "]\n\n\n"
+    return outputContent
 
-
+ 
 
 """
 NORMAL SAMPLES:
