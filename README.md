@@ -22,6 +22,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
        * Common flu RO = 1.28 ([Estimated, transmission rate](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480))
        * nCov RO = 2.5 to 3.8 ([Estimated transmission rate](https://www.sciencenews.org/article/how-new-wuhan-coronavirus-stacks-up-against-sars-mers))
             * Recent nCov RO estimate [~4.08](https://www.medrxiv.org/content/10.1101/2020.01.27.20018952v1)!
+            * Recent nCov 2019/Covid19 Incubation period is [estimated at 24 days](https://www.businessinsider.com/wuhan-coronavirus-symptoms-24-days-after-infection-2020-2)
 * Current diagnosis methods may miss the presence of the virus due to [faulty dna based comparison methods, where multiple negative test results may occur before positive results are gained.](https://www.bbc.co.uk/news/health-51491763) In addition, more doctors (or rather more automated diagnosis methods) can improve identification rates of the virus.
 * This ai driven method will reasonably help to **stop** [the exponential growth](http://www.renewamerica.com/columns/cherry/200126) of the nCov strain. 
     * 1 more month of exponential nCov growth = [~ 115 million cases, (of which ~ 23 million are potentially life threatening ones)](https://www.youtube.com/watch?v=Yq3Y9rmlEQE) according to [an epidemiologist/PhD pathologist](https://en.wikipedia.org/wiki/Christopher_Martenson).
