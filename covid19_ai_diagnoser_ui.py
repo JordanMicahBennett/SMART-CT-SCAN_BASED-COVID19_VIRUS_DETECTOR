@@ -3,14 +3,14 @@
 
 import covid19_ai_diagnoser
 
-from tkinter import Frame, Tk, BOTH, Label, Menu, filedialog
+from tkinter import Frame, Tk, BOTH, Label, Menu, filedialog, messagebox
 from PIL import Image, ImageTk
 
 import os
 import codecs
 
-screenWidth = "1200"
-screenHeight = "800"
+screenWidth = "1560"
+screenHeight = "840"
 windowTitle = "Smart/Ai Coronavirus 2019 (Covid19) Diagnosis Tool"
 
 
@@ -60,9 +60,10 @@ def loadImageFromName(filename):
     img = Label(image=render)
     img.image = render
     img.place(x=(int(screenWidth)/2)-load.width/2, y=((int(screenHeight)/2))-load.height/2)
-    print("######################\n") 
-    print(filename+"\n") #Print active filename before prediction
-    covid19_ai_diagnoser.doOnlineInference (filename)
+    outputContent = "#############################################\n" + filename+"\n\n"
+    outputContent += covid19_ai_diagnoser.doOnlineInference (filename)
+    print(outputContent)
+    messagebox.showinfo(title=windowTitle + " : Result ", message=outputContent)
 
 # Adding a load image button to the cascade menu "File"
 filemenu.add_command(label="Load an image", command=loadImageFromDialog)
