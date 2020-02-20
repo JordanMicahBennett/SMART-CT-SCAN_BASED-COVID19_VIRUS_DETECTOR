@@ -9,6 +9,12 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 * This can also reasonably allow for less experienced medical personnel to make preliminary diagnoses, expanding the diagnosis efforts overall. This effort may contribute towards virus-control progress, together with [other ai based endeavours being developed accross the globe, such as use of ai for vaccine development.](https://www.facebook.com/ProgrammingGodJordan/posts/876578989467795)
 
+
+# CT Scan Test Viability
+* **Feb 9, 2020**: I disocver similarities between covid19 pneumonia and other forms of pneumonia, after which I find a few CT-Images representing positive cases of Covid19 by Chinese authorities, where I decided to use ai a diagnosis method. This reasonsing is seen in my research/discovery process in the Deep Learning Code section below.
+* **Feb 19, 2020**: Scientists reveal a 98% accuracy in diagnostics, compared to the popular Dna polymerase chain reaction method by CDC: ["In a series of 51 patients with chest CT and RT-PCR assay performed within 3 days, the sensitivity of CT for COVID-19 infection was 98% compared to RT-PCR sensitivity of 71% (p<.001)."](https://pubs.rsna.org/doi/10.1148/radiol.2020200432)
+
+
 # CT Test Result Time versus Dna Method (Comparison)
 * Molecular and Serology Tests: **[~20 minutes](https://www.cdc.gov/coronavirus/2019-ncov/lab/rt-pcr-detection-instructions.html)** for equipment prep alone, for real-time polymerase chain reaction (RT-PCR), and up to **24 hours** before testing is verified. See **bullet point 3, in answer to question "Can someone who has had COVID-19 spread the illness to others?"** on [this CDC website/covid19 FAQ page.](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
 * [CT Image Scan + Artificial Intelligence Diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR): ~5 minutes ([for scan](https://www.ielcap.org/library/lung-cancer-screening/faqs)) + A few milliseconds for [Ai diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR) = **~6 minutes total** time for diagnosis result including possible image processing. 
