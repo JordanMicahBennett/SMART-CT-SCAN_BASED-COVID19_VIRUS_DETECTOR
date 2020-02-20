@@ -19,6 +19,8 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 * Molecular and Serology Tests: **[~20 minutes](https://www.cdc.gov/coronavirus/2019-ncov/lab/rt-pcr-detection-instructions.html)** for equipment prep alone, for real-time polymerase chain reaction (RT-PCR), and up to **24 hours** before testing is verified. See **bullet point 3, in answer to question "Can someone who has had COVID-19 spread the illness to others?"** on [this CDC website/covid19 FAQ page.](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
 * [CT Image Scan + Artificial Intelligence Diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR): ~5 minutes ([for scan](https://www.ielcap.org/library/lung-cancer-screening/faqs)) + A few milliseconds for [Ai diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR) = **~6 minutes total** time for diagnosis result including possible image processing. 
 
+My repository includes a few fixes to the original repository, including a simple user interface to facilitate command-free automated diagnosis.
+
 # WORLD HEALTH ORGANIZATION (WHO) WARNING
 [Coronavirus: Whole world 'must take action', warns WHO](https://www.bbc.com/news/world-asia-china-51299195)  
 [Update Jan 31, 2020/WHO declares the new coronavirus outbreak a Public Health Emergency of International Concern](https://www.who.int/news-room/detail/30-01-2020-statement-on-the-second-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov))
