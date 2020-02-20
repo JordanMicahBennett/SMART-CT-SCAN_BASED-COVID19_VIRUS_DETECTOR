@@ -11,7 +11,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 
 # CT Scan Test Viability
-* **Feb 9, 2020**: I disocver similarities between covid19 pneumonia and other forms of pneumonia, after which I find a few CT-Images representing positive cases of Covid19 by Chinese authorities, where I decided to use ai a diagnosis method. This reasonsing is seen in my research/discovery process in the Deep Learning Code section below.
+* **Feb 9, 2020**: I discover similarities between covid19 pneumonia and other forms of pneumonia, after which I find a few CT-Images representing positive cases of Covid19 by Chinese authorities, where I decided to use the images as inputs to an ai based pneumonia diagnosis method. This reasonsing is seen in my research/discovery process in the [Deep Learning Code section below](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR#deep-learning-codetests--code-discussion--call-for-contribution).
 * **Feb 19, 2020**: Scientists reveal a 98% accuracy in diagnostics, compared to the popular Dna polymerase chain reaction method by CDC: ["In a series of 51 patients with chest CT and RT-PCR assay performed within 3 days, the sensitivity of CT for COVID-19 infection was 98% compared to RT-PCR sensitivity of 71% (p<.001)."](https://pubs.rsna.org/doi/10.1148/radiol.2020200432)
 
 
