@@ -117,4 +117,12 @@ By extension, [the tool by researchers at John Hopkins University](https://editi
 
 https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
 
-Note that despite the ~900+ infection-case number reported via China on January 24, by stark contrast, a [medical scientific paper estimated that ~105,000+ infections actually occured at that time](https://www.medrxiv.org/content/10.1101/2020.01.23.20018549v2.full.pdf). All source
+Note that despite the ~900+ infection-case number reported via China on January 24, by stark contrast, a [medical scientific paper estimated that ~105,000+ infections actually occured at that time](https://www.medrxiv.org/content/10.1101/2020.01.23.20018549v2.full.pdf). 
+
+
+
+
+# COVID-19 AI DATA/CALL ON THE MINISTRY OF HEALTH 
+
+I call on the [Ministry of Health](https://www.moh.gov.jm/) to utilize its administrative status to acquire more covid19 positive CT scan images (in federated format that excludes patient identity), from China, for the purpose of further enhancing [this pneumonia based ai solution that I had prepared.](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/README.md).
+  * Alternatively, the Chinese artificial intelligence algorithm/solution together with the data could be attained using the same administrative method.
