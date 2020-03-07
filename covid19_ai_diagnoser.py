@@ -59,7 +59,7 @@ test_set = test_dataGen.flow_from_directory('xray_dataset/test',
                                                 class_mode='categorical')
 
 score = model.evaluate_generator(test_set, test_sample_number/32, workers=12)
-print ("model accuracy [loss = " + str(score[0]*100) + "%, accuracy = " + str(score[1]*100) +"]%")
+print ("model accuracy [loss = " + str(score[0]*100) + "%, accuracy = " + str(score[1]*100) +"%]")
 #See metrics using: `model.metrics_names` 
 
 
