@@ -139,4 +139,4 @@ My advice to Ministry of Health: https://drive.google.com/file/d/1OuhGAtayGmMJUr
 # Update March 5, 2020:
 1. [Jordan added fix to original author's repository](https://github.com/JohnChangUK/Pneumonia-Kaggle/issues/1), to enable correct validation. John Chang had inadvertently misdefined some "test_dataGen.flow_from_director" function paramter as a training dataset input, instead of a test dataset input.
 
-2. [Jordan updated his version of the original code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser.py), such that a compile issue is repaired, in order to faciliate accuracy evaluation of the saved/loaded model without model-training.
+2. [Jordan updated his version of the original code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser.py), such that a compile issue is repaired, in order to faciliate accuracy evaluation of the saved/loaded (in 2 minutes on gtx 1060/i7 cpu) model without invocation of model-training function **model.fit**, which would take hours on the same machine.
