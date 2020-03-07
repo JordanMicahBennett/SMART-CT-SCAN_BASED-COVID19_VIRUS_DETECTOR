@@ -44,6 +44,8 @@ def doOnlineInference (imagePath):
 
 ##########################
 # Function added by Jordan to evaluate accuracy of loaded model. Model is evaluated without the need for retraining.
+# Thus, this faciliates accuracy evaluation of the saved/loaded (in 2 minutes on gtx 1060/i7 cpu) model without invocation of model-training function **model.fit**, which would take hours on the same machine.
+
 # Evaluate saved model
 from keras.preprocessing.image import ImageDataGenerator
 
