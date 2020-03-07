@@ -133,3 +133,10 @@ I call on the [Ministry of Health of Jamaica](https://www.moh.gov.jm/) (as well 
   * In future scenarios, a "**_Division of Artificial Intelligence Based Health Development_**" or sector of artificial intelligence based research should reasonably exist in the Ministry of Health, that could enable Ai solutions to be rapidly researched/developed, to facilitate production of vaccines, and treatment, as seen in a recent example where [MIT developed antibiotics based on Ai research/development](https://www.iflscience.com/health-and-medicine/artificial-intelligence-finds-a-powerful-new-antibiotic-for-the-first-time/).
   
 My advice to Ministry of Health: https://drive.google.com/file/d/1OuhGAtayGmMJUrDCl9nkVVGQXea3Mj7B/view?usp=sharing
+
+
+
+# Update March 5, 2020:
+1. [Jordan added fix to original author's repository](https://github.com/JohnChangUK/Pneumonia-Kaggle/issues/1), to enable correct validation. John Chang had inadvertently misdefined some "test_dataGen.flow_from_director" function paramter as a training dataset input, instead of a test dataset input.
+
+2. [Jordan updated his version of the original code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser.py), such that a compile issue is repaired, in order to faciliate accuracy evaluation of the saved/loaded model.
