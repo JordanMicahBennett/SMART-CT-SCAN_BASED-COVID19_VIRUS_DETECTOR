@@ -132,7 +132,7 @@ I call on the [Ministry of Health of Jamaica](https://www.moh.gov.jm/) (as well 
   * Alternatively, the Chinese artificial intelligence algorithm/solution together with the data could be attained using the same administrative method.
   * In future scenarios, a "**_Division of Artificial Intelligence Based Health Development_**" or sector of artificial intelligence based research should reasonably exist in the Ministry of Health, that could enable Ai solutions to be rapidly researched/developed, to facilitate production of vaccines, and treatment, as seen in a recent example where [MIT developed antibiotics based on Ai research/development](https://www.iflscience.com/health-and-medicine/artificial-intelligence-finds-a-powerful-new-antibiotic-for-the-first-time/).
   
-My advice to Ministry of Health: https://drive.google.com/file/d/1OuhGAtayGmMJUrDCl9nkVVGQXea3Mj7B/view?usp=sharing
+My advice to Ministry of Health: https://drive.google.com/file/d/1TKT-2kFAB0fF6t0viKVu6xteXCBUwAte/view?usp=sharing
 
 
 
