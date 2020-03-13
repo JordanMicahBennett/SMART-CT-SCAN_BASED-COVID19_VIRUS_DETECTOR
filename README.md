@@ -5,9 +5,9 @@ The aim is to develop a quick way to detect the nCov 2019 (Coronavirus 2019/2020
 
 This project began on January 29, 2020, here: [SMART-CORONA_VIRUS_DETECTOR](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR). This CT-scan version began on [Feb 9, 2020.](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/graphs/contributors)
 
-As this is the first known attempt, [commencing on January 29 2020](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR/commit/49984b40847eb168800f0874bae7f8a0f2e20991) aimed collaborating to construct this type of program, please point to open source packages with similar goals. Please email jordanmicahbennett@gmail.com.
+As this is the first known attempt, [commencing on January 29 2020](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR/commit/49984b40847eb168800f0874bae7f8a0f2e20991) aimed at collaborating to construct this type of program, please point to open source packages with similar goals. Please email jordanmicahbennett@gmail.com.
 
-* This can also reasonably allow for less experienced medical personnel to make preliminary diagnoses, expanding the diagnosis efforts overall. This effort may contribute towards virus-control progress, together with [other ai based endeavours being developed accross the globe, such as use of ai for vaccine development.](https://www.facebook.com/ProgrammingGodJordan/posts/876578989467795)
+* This can also reasonably allow for less experienced medical personnel to make preliminary diagnoses, expanding the diagnosis efforts overall. This effort may contribute towards virus-control progress, together with [other ai based endeavours being developed across the globe, such as use of ai for vaccine development.](https://www.facebook.com/ProgrammingGodJordan/posts/876578989467795)
 
 
 # CT Scan Test Viability
@@ -70,7 +70,7 @@ My repository includes a few fixes of [the original repository](https://github.c
 
 7. **Preliminary Conclusion**
     * This will reasonably work on potential mild-covid-19 pneumonia patients, within ~0 to 4 days of infection, with "repeated pulmonary CTs", where positive findings of pneumonia associated abnormalities are discoverable.
-    * This will likely work better for patients after ~5 days of infection of covid-19, as abnormailities become distributed accross the lungs, where initial CT scans could better discover the Covid-19 markers.
+    * This will likely work better for patients after ~5 days of infection of covid-19, as abnormalities become distributed across the lungs, where initial CT scans could better discover the Covid-19 markers.
     * See [the paper's conclusion](https://pubs.rsna.org/doi/10.1148/radiol.2020200370) for the reasoning above.
     
     
@@ -98,7 +98,7 @@ My repository includes a few fixes of [the original repository](https://github.c
   * Notice the log with the results of the neural network's prediction above the large blue arrow, and the image has been loaded for viewing right of small blue arrow:
   ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage3_ImageLoaded_PredictionMade-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
   
-  * The model is ~96% accurate on the original task of penumonia/non-pneumonia classification.
+  * The model is ~96% accurate on the original task of pneumonia/non-pneumonia classification.
       * See [the bottom of the original page.](https://github.com/JohnChangUK/Pneumonia-Kaggle/blob/master/pneumonia.ipynb)
 
 **CT Scan Manual Diagnosis and Explosion in infection reports**
