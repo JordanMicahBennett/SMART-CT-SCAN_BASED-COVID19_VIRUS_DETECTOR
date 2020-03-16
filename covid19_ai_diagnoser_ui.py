@@ -18,7 +18,7 @@ class Window(Frame):
     _PRIOR_IMAGE = None
     #establish variable to keep track of images added to Frame, for purpose of preventing stacking @ new image additions
     #by using destroy() on each old image instance @ addition
-	#Added by Jordan Bennett, based on suggestion by Andrei Marinescu, who suggested that ct scan images should not stack as new ones are loaded. (https://www.facebook.com/mvandrei)
+	#Added by Jordan Bennett, based on suggestion by Andrei Marinescu, who suggested that xray images should not stack as new ones are loaded. (https://www.facebook.com/mvandrei)
     
     def __init__(self, master=None):
         Frame.__init__(self, master)
