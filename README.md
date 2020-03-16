@@ -101,7 +101,6 @@ My repository includes a few fixes of [the original repository](https://github.c
   ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage3_ImageLoaded_PredictionMade-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
   
   * The model is [~92% accurate](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/JordanBennett_model_accuracy%20after%20Learning%20Rate%20name%20fix%20%2B%20evaluation%20model.png) on the original task of pneumonia/non-pneumonia classification.
-      * See [the bottom of the original page.](https://github.com/JohnChangUK/Pneumonia-Kaggle/blob/master/pneumonia.ipynb)
 
 **CT Scan Manual Diagnosis and Explosion in infection reports**
 
