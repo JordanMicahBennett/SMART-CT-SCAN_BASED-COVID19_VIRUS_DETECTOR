@@ -15,6 +15,11 @@ windowTitle = "Smart/Ai Coronavirus 2019 (Covid19) Diagnosis Tool"
 
 
 class Window(Frame):
+    _PRIOR_IMAGE = None
+    #establish variable to keep track of images added to Frame, for purpose of preventing stacking @ new image additions
+    #by using destroy() on each old image instance @ addition
+	#Added by Jordan Bennett, based on suggestion by Andrei Marinescu, who suggested that ct scan images should not stack as new ones are loaded. (https://www.facebook.com/mvandrei)
+    
     def __init__(self, master=None):
         Frame.__init__(self, master)
         self.master = master
@@ -25,12 +30,12 @@ class Window(Frame):
         img = Label(self, image=render)
         img.image = render
         img.place(x=(int(screenWidth)/2)-load.width/2, y=((int(screenHeight)/2))-load.height/2)
+        self._PRIOR_IMAGE = img #setup prior image instance
 
 
         
 root = Tk()
 app = Window(root)
-
 
 
 
@@ -55,6 +60,7 @@ def loadImageFromDialog():
     loadImageFromName(image_file.name)
 
 def loadImageFromName(filename):
+    app._PRIOR_IMAGE.destroy() #destroy old image
     load = Image.open(filename)
     render = ImageTk.PhotoImage(load)
     img = Label(image=render)
@@ -63,11 +69,12 @@ def loadImageFromName(filename):
     outputContent = "#############################################\n" + filename+"\n\n"
     outputContent += covid19_ai_diagnoser.doOnlineInference (filename)
     print(outputContent)
+    app._PRIOR_IMAGE = img #set latest instance of old image
     messagebox.showinfo(title=windowTitle + " : Result ", message=outputContent)
+    
 
 # Adding a load image button to the cascade menu "File"
 filemenu.add_command(label="Load an image", command=loadImageFromDialog)
-
 
 
 ############
