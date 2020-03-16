@@ -55,7 +55,7 @@ menubar.add_cascade(label="Files", menu=filemenu)
 # Defining function to trigger file browser
 def loadImageFromDialog():
     currdir = os.getcwd()
-    image_file = filedialog.askopenfile(mode ='r', parent=root, initialdir=currdir, title='Please select a CT Image of suspected coronavirus2019 case:')
+    image_file = filedialog.askopenfile(mode ='r', parent=root, initialdir=currdir, title='Please select an Xray Image of suspected coronavirus2019 case:')
     root.wm_title(windowTitle + " : " + image_file.name)
     loadImageFromName(image_file.name)
 
