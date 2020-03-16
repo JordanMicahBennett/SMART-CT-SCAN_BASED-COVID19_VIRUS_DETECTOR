@@ -9,6 +9,8 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 * This can also reasonably allow for less experienced medical personnel to make preliminary diagnoses, expanding the diagnosis efforts overall. This effort may contribute towards virus-control progress, together with [other ai based endeavours being developed across the globe, such as use of ai for vaccine development.](https://www.facebook.com/ProgrammingGodJordan/posts/876578989467795)
 
+* **This Ai can reasonably also be trained on CT-Scan image data, separate from the Xray data upon which training occured.**
+
 
 # CT Scan Test Viability
 * **Feb 9, 2020**: I discover similarities between Covid19 and known forms of pneumonia, after which I find a few Xray-Images representing positive cases of Covid19 by Chinese authorities, where I decided to perform **_artificial intelligence based_** **Xray Image Scan diagnostics**, by using the images as inputs to an artificial intelligence based pneumonia diagnosis method [originally published/made by John Chang in November 2019](https://github.com/JohnChangUK/Pneumonia-Kaggle). This reasoning is seen in my research/discovery process in the [Deep Learning Code section below](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR#deep-learning-codetests--code-discussion--call-for-contribution).
@@ -22,9 +24,9 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 My repository includes a few fixes of [the original repository](https://github.com/JohnChangUK/Pneumonia-Kaggle), including [a simple user interface to facilitate command-free automated covid19 diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/README.md#code-setup-graphical-user-interface).
 
-# CT Test Result Time versus Dna Method (Comparison)
+# Xray Test Result Time versus Dna Method (Comparison)
 * Molecular and Serology Tests: **[~20 minutes](https://www.cdc.gov/coronavirus/2019-ncov/lab/rt-pcr-detection-instructions.html)** for equipment prep alone, for real-time polymerase chain reaction (RT-PCR), and up to **24 hours** before testing is verified. See **bullet point 3, in answer to question "Can someone who has had COVID-19 spread the illness to others?"** on [this CDC website/covid19 FAQ page.](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
-* [CT Image Scan + Artificial Intelligence Diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR): ~5 minutes ([for scan](https://www.ielcap.org/library/lung-cancer-screening/faqs)) + A few milliseconds for [Ai diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR) = **~6 minutes total** time for diagnosis result including possible image processing. 
+* [Xray Image Scan + Artificial Intelligence Diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR): ~5 minutes ([for scan](https://www.ielcap.org/library/lung-cancer-screening/faqs)) + A few milliseconds for [Ai diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR) = **~6 minutes total** time for diagnosis result including possible image processing. 
 
 
 # WORLD HEALTH ORGANIZATION (WHO) WARNING
