@@ -14,7 +14,7 @@ import numpy as np
 #           2) response to (1) by "Qin Heyang"
 # Error repaired when trying to load default "vgg19.h5" file: "TypeError: Unexpected keyword argument passed to optimizer: learning_rate"
 import h5py
-f = h5py.File("vgg19.h5",'r+') 
+f = h5py.File("vgg19_default.h5",'r+') 
 data_p = f.attrs['training_config']
 data_p = data_p.decode().replace("learning_rate","lr").encode()
 f.attrs['training_config'] = data_p
@@ -22,7 +22,7 @@ f.close()
 #end fix
 
 
-model = load_model('vgg19.h5')
+model = load_model('vgg19_default.h5')
 
 
 
@@ -37,9 +37,18 @@ def doOnlineInference (imagePath):
     outputContent = "Normal with (" + str( round( prediction[0][0]*100, 3 )) + "%) confidence.\n\n"
     outputContent += "Coronavirus Pneumonia with ("  + str( round( prediction[0][1]*100, 3 ) ) + "%) confidence.\n\n" 
     outputContent += "Raw neural network output array [normal,pneumonia] ~> [" + str( round( prediction[0][0], 3 )) + "," + str( round( prediction[0][1], 3 )) + "]\n\n\n"
+    recordInferenceEvent ( imagePath, outputContent )
     return outputContent
 
-
+#Record each inference in a text file 
+import datetime
+def recordInferenceEvent ( imagePath, outputContent ):
+    currentDate = datetime.datetime.now()
+    with open("inference_record.txt", "a") as text_file:
+        text_file.write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+        text_file.write("DATE/TIME : " + str(currentDate.month) + " " + str(currentDate.day) + ", " + str(currentDate.year) + "..." + str(currentDate.hour) + ":" + str(currentDate.minute) + ":" + str(currentDate.second) + "\n\n") 
+        text_file.write("IMAGE : " + imagePath + "\n\n")
+        text_file.write("RESULT : \n" + outputContent + "\n\n\n\n")
 
 
 ##########################
@@ -74,8 +83,8 @@ doOnlineInference("xray_dataset/val/PNEUMONIA/person1946_bacteria_4875.jpeg")
 doOnlineInference("xray_dataset/val/PNEUMONIA/person1950_bacteria_4881.jpeg")
 
 ACTUAL CORONAVIRUS SAMPLES:
-doOnlineInference("coronavirus_positive_WeifangKong_et-al.jpg")
-doOnlineInference("coronavirus_positive_day7_of_infection_UPSCALED.jpg")
+doOnlineInference("data/xray-samples/covid19-positive/coronavirus_positive_WeifangKong_et-al.jpg")
+doOnlineInference("data/xray-samples/covid19-positive/coronavirus_positive_day7_of_infection_UPSCALED.jpg")
 """
 
 
