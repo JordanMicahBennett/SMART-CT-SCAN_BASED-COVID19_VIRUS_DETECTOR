@@ -9,7 +9,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 * This can also reasonably allow for less experienced medical personnel to make preliminary diagnoses, expanding the diagnosis efforts overall. This effort may contribute towards virus-control progress, together with [other ai based endeavours being developed across the globe, such as use of ai for vaccine development.](https://www.facebook.com/ProgrammingGodJordan/posts/876578989467795)
 
-* **This Ai can reasonably also be trained on CT-Scan image data, separate from the Xray data upon which training occured.**
+* **This convolutional neural network architecture can reasonably also be trained on CT-Scan image data, separate from the Xray data upon which training occured.**
 
 
 # CT Scan Test Viability
