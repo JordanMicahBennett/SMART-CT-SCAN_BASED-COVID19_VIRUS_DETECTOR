@@ -13,7 +13,11 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 
 # Xray Scan Test Viability
+
 * **Feb 9, 2020**: I discover similarities between Covid19 and known forms of pneumonia, after which I find a few Xray-Images representing positive cases of Covid19 by Chinese authorities, where I decided to perform **_artificial intelligence based_** **Xray Image Scan diagnostics**, by using the images as inputs to an artificial intelligence based pneumonia diagnosis method [originally published/made by John Chang in November 2019](https://github.com/JohnChangUK/Pneumonia-Kaggle). This reasoning is seen in my research/discovery process in the [Deep Learning Code section below](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR#deep-learning-codetests--code-discussion--call-for-contribution).
+
+   * My repository includes a few fixes of [the original repository](https://github.com/JohnChangUK/Pneumonia-Kaggle), including [a simple user interface to facilitate command-free automated covid19 diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/README.md#code-setup-graphical-user-interface).
+   
 * **Feb 19, 2020**: Scientists reveal a ~98% accuracy in **_human/radiology based_** **CT Scan image based diagnostics**, compared to the popular Dna polymerase chain reaction method by CDC: ["In a series of 51 patients with chest CT and RT-PCR assay performed within 3 days, the sensitivity of CT for COVID-19 infection was ~98% compared to RT-PCR sensitivity of ~71% (p<.001)."](https://pubs.rsna.org/doi/10.1148/radiol.2020200432)
 * **Feb 20, 2020**: Great news - Feb 20 news report published, that Chinese are using Ai to help identify the virus with reported ~99% accuracy, [via their own Ai based CT-scan method](http://www.sixthtone.com/news/1005216/scan-reading-ai-systems-are-helping-doctors-diagnose-covid-19). 
   * Unfortunately, unlike [this repository started by myself on Feb 9th](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/), no Chinese publication of ai based algorithms seems to have been made to the public to help facilitate global control of covid19/SarsCov2.
@@ -21,8 +25,10 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
   * [I still call to have code/data released for enhanced covid19 spread control](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/README.md#covid-19-ai-datacall-on-the-ministry-of-health).
   * One reason why China should reasonably release their code and data, is because their trained algorithm and data, while providing good basis, may also be [susceptible to race based computation issues](https://time.com/5520558/artificial-intelligence-racial-gender-bias/), simply due to the reality that most Covid19 patient/data are those of Chinese/race. 
       * My showcasing of this repository's code, and or my suggested publication of China's ai code may enable further training on data pertaining to race distributions of the target nation where Covid19 screening is applicable/required, [as seen in other work that stresses accounts for diversity.](https://www.cs.cornell.edu/information/news/newsitem10371/rediet-abebes-contributions-correct-ais-diversity-problem-highlighted).
+      
+* **March 16, 2020**: [Adrian Rosebrock produced a Covid19 detector with ~90% accuracy, and ~80% sensitivity, using keras machine learning library](https://www.pyimagesearch.com/2020/03/16/detecting-covid-19-in-x-ray-images-with-keras-tensorflow-and-deep-learning/), from a recent [covid19 xray dataset released 4 days ago](https://github.com/ieee8023/covid-chestxray-dataset).
 
-My repository includes a few fixes of [the original repository](https://github.com/JohnChangUK/Pneumonia-Kaggle), including [a simple user interface to facilitate command-free automated covid19 diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/README.md#code-setup-graphical-user-interface).
+
 
 # Xray Test Result Time versus Dna Method (Comparison)
 * Molecular and Serology Tests: **[~20 minutes](https://www.cdc.gov/coronavirus/2019-ncov/lab/rt-pcr-detection-instructions.html)** for equipment prep alone, for real-time polymerase chain reaction (RT-PCR), and up to **24 hours** before testing is verified. See **bullet point 3, in answer to question "Can someone who has had COVID-19 spread the illness to others?"** on [this CDC website/covid19 FAQ page.](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
