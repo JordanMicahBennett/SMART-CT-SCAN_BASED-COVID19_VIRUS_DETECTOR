@@ -26,6 +26,8 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
   * One reason why China should reasonably release their code and data, is because their trained algorithm and data, while providing good basis, may also be [susceptible to race based computation issues](https://time.com/5520558/artificial-intelligence-racial-gender-bias/), simply due to the reality that most Covid19 patient/data are those of Chinese/race. 
       * My showcasing of this repository's code, and or my suggested publication of China's ai code may enable further training on data pertaining to race distributions of the target nation where Covid19 screening is applicable/required, [as seen in other work that stresses accounts for diversity.](https://www.cs.cornell.edu/information/news/newsitem10371/rediet-abebes-contributions-correct-ais-diversity-problem-highlighted).
       
+* **March 13, 2020**: [Kaggle launches large global effort to combat Covid19, with a call to action including data collections of oveer 29,000 Covid19 associated papers](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge).
+      
 * **March 16, 2020**: [Adrian Rosebrock produced a Covid19 detector with ~90% accuracy, and ~80% sensitivity, using keras machine learning library](https://www.pyimagesearch.com/2020/03/16/detecting-covid-19-in-x-ray-images-with-keras-tensorflow-and-deep-learning/), from a recent [covid19 xray dataset released 4 days ago](https://github.com/ieee8023/covid-chestxray-dataset).
 
 
