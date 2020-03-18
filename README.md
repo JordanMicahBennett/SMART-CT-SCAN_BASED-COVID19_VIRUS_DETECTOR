@@ -154,6 +154,19 @@ Note that despite the ~900+ infection-case number reported via China on January 
 
 
 
+# TRAINING ON NEW COVID19 DATA
+
+The "renderConfusionMetrics" instance in Section C (bottom of "covid19_ai_diagnoser_optimal_model_architecture.py"](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser_optimal_model_architecture.py) file) can facilitate training of new covid19 images placed in **xray_dataset_covid19/train** and or **xray_dataset_covid19/test*.
+
+This is done by changing the "False" parameter to "True".
+
+```python
+renderConfusionMetrics ( model_covid19PneumoniaDetector, test_data_d, test_labels_d, False, train_gen_d, test_gen_d, batch_size, 25, 'covid19_weights_v3.hdf5' )
+```
+
+
+
+
 
 # COVID-19 AI DATA/CALL ON THE MINISTRY OF HEALTH 
 
