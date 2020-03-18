@@ -13,6 +13,7 @@ screenWidth = "1560"
 screenHeight = "840"
 windowTitle = "Smart/Ai Coronavirus 2019 (Covid19) Diagnosis Tool"
 
+import cv2
 
 class Window(Frame):
     _PRIOR_IMAGE = None
@@ -26,7 +27,7 @@ class Window(Frame):
         self.pack(fill=BOTH, expand=1)
         
         load = Image.open("covid19_ai_diagnoser_default__.jpg")
-        render = ImageTk.PhotoImage(load, master=root)
+        render = ImageTk.PhotoImage(load)
         img = Label(self, image=render)
         img.image = render
         img.place(x=(int(screenWidth)/2)-load.width/2, y=((int(screenHeight)/2))-load.height/2)
@@ -53,29 +54,49 @@ filemenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Files", menu=filemenu)
 
 # Defining function to trigger file browser
-def loadImageFromDialog():
+def loadRegularPneumoniaImageFromDialog():
     currdir = os.getcwd()
-    image_file = filedialog.askopenfile(mode ='r', parent=root, initialdir=currdir, title='Please select an Xray Image of suspected coronavirus2019 case:')
+    image_file = filedialog.askopenfile(mode ='r', parent=root, initialdir=currdir, title='Please select an Xray Image of suspected regular pneumonia case:')
     root.wm_title(windowTitle + " : " + image_file.name)
-    loadImageFromName(image_file.name)
+    loadRegularPneumoniaImageFromName(image_file.name)
 
-def loadImageFromName(filename):
+def loadRegularPneumoniaImageFromName(filename):
     app._PRIOR_IMAGE.destroy() #destroy old image
     load = Image.open(filename)
-    render = ImageTk.PhotoImage(load, master=None)
+    render = ImageTk.PhotoImage(load)
     img = Label(image=render)
     img.image = render
     img.place(x=(int(screenWidth)/2)-load.width/2, y=((int(screenHeight)/2))-load.height/2)
     outputContent = "#############################################\n" + filename+"\n\n"
-    outputContent += covid19_ai_diagnoser.doOnlineInference (filename)
+    outputContent += covid19_ai_diagnoser.doOnlineInference_regularPneumonia (filename)
+    print(outputContent)
+    app._PRIOR_IMAGE = img #set latest instance of old image
+    messagebox.showinfo(title=windowTitle + " : Result ", message=outputContent)
+
+
+def loadCovid19ImageFromDialog():
+    currdir = os.getcwd()
+    image_file = filedialog.askopenfile(mode ='r', parent=root, initialdir=currdir, title='Please select an Xray Image of suspected coronavirus2019 case:')
+    root.wm_title(windowTitle + " : " + image_file.name)
+    loadCovid19ImageFromName(image_file.name)
+
+def loadCovid19ImageFromName(filename):
+    app._PRIOR_IMAGE.destroy() #destroy old image
+    load = Image.open(filename)
+    render = ImageTk.PhotoImage(load)
+    img = Label(image=render)
+    img.image = render
+    img.place(x=(int(screenWidth)/2)-load.width/2, y=((int(screenHeight)/2))-load.height/2)
+    outputContent = "#############################################\n" + filename+"\n\n"
+    outputContent += covid19_ai_diagnoser.doOnlineInference_covid19Pneumonia (filename)
     print(outputContent)
     app._PRIOR_IMAGE = img #set latest instance of old image
     messagebox.showinfo(title=windowTitle + " : Result ", message=outputContent)
     
 
 # Adding a load image button to the cascade menu "File"
-filemenu.add_command(label="Load an image", command=loadImageFromDialog)
-
+filemenu.add_command(label="Load Regular Pnuemonia image", command=loadRegularPneumoniaImageFromDialog)
+filemenu.add_command(label="Load Covid19 Pneumonia image", command=loadCovid19ImageFromDialog)
 
 ############
 #root cycle
