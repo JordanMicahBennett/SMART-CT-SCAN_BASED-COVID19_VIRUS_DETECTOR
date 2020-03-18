@@ -123,7 +123,8 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 2. [Images](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200034&fig=fig1) from recent covid-19 study: ["Imaging Profile of the COVID-19 Infection: Radiologic Findings and Literature Review"](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200034)
 
-3. [+21 axial lung images, +11 lateral view lung images, and about +118 coronal view lung images, re Covid19 positive cases](https://github.com/ieee8023/covid-chestxray-dataset), by [Dr. Joseph Cohen](https://josephpcohen.com/w/). Train with caution, i.e. it is reasonable to select one type of view format, for pretrained model, training process, and inference/testing cycle.
+3. [+21 axial lung images, +11 lateral view lung images, and about +118 coronal view lung images, re Covid19 positive cases](https://github.com/ieee8023/covid-chestxray-dataset), collated by [Dr. Joseph Cohen](https://josephpcohen.com/w/). 
+    * Train with caution, i.e. it is reasonable to select one type of view format, for pretrained model, training process, and inference/testing cycle.
 
 # REAL TIME TRACKING OF NCOV 2019/2020
 
