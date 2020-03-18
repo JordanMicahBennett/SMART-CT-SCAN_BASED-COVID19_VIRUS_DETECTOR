@@ -158,5 +158,6 @@ My advice to Ministry of Health (February 17, 2020): https://drive.google.com/fi
 
 4. Code no longer runs on John Chang's base code. Jordan has written [new diagnoser code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser.py), to accomodate [a new code base](https://www.kaggle.com/gbellport/pneumonia-detection-96-recall-91-accuracy/).
    * For the task of pneumonia detection, the new code base has far higher sensitivity/recall (~89%), specificity (~88%) as seen [in the new screenshot](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/___pneumonia_detector_accuracy.png), compared to John Chang's code, which had: sensitivity/recall (~33%), specificity (~67%).
+   * For the task of Covid19 detection, with the pneumonia model that wasn't specifically trained for Covid19, this is the outcome: Sensitivity/Specificity/Accuracy of ~96%/~48%/~72% respectively.
    
    
