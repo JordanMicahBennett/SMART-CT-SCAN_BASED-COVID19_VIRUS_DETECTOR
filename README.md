@@ -156,11 +156,11 @@ Note that despite the ~900+ infection-case number reported via China on January 
 
 # TRAINING ON NEW COVID19 DATA
 
-The "renderConfusionMetrics" instance in Section C (bottom of ["covid19_ai_diagnoser_optimal_model_architecture.py"](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser_optimal_model_architecture.py) file) can facilitate training of new covid19 images placed in **_xray_dataset_covid19/train_** and or **_xray_dataset_covid19/test_**.
+The "renderConfusionMetrics" instance in Section D (bottom of ["covid19_ai_diagnoser_optimal_model_architecture.py"](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser_optimal_model_architecture.py) file) can facilitate training of new covid19 images placed in **_xray_dataset_covid19/train_** and or **_xray_dataset_covid19/test_**.
 
 This is done by simply placing your images in the directories above, then changing the "_False_" parameter to "True", and running the ["covid19_ai_diagnoser_optimal_model_architecture.py"](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser_optimal_model_architecture.py) file. 
 
-   * If the last _.hdf5_ weights parameter is changed, the **_model_covid19PneumoniaDetector.load_weights_** parameter will also require change in the same "Section C" only.
+   * If the last _.hdf5_ weights parameter is changed, the **_model_covid19PneumoniaDetector.load_weights_** parameter will also require change in the same "Section D" only.
 
 ```python
 renderConfusionMetrics ( model_covid19PneumoniaDetector, test_data_d, test_labels_d, False, train_gen_d, test_gen_d, batch_size, 25, 'covid19_weights_v3.hdf5' )
