@@ -105,7 +105,7 @@ On the task of Covid19 detection, so far, with the very limited data available, 
 2. Download the saved weights: "**best_weights.hdf5**" from [the output section of the base code repository on kaggle](https://www.kaggle.com/gbellport/pneumonia-detection-96-recall-91-accuracy/output) (easy to become a member using gmail etc), rename the .h5 file to "**best_weights_kaggle_user_pneumonia2_0.hdf5**" then ensure both the code and weights are in same place. 
    * Alternatively, you could download the already renamed weights, from [this typically easy to access google drive link of mine](https://drive.google.com/file/d/19sQH0JorFY3enQWURw29H6eJKNLO5HeR/view?usp=sharing).
 3. Download the [2 gigabytes training/test data from kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/download).
-4. Download **this x ray covid19 dataset that I've collated** (that I'm now uploading) from [Dr. Cohen's collation](https://github.com/ieee8023/covid-chestxray-dataset). Ensure the extracted **"xray_dataset_covid19"** folder is in the same directory as the python files in this repository.
+4. Download [**this x ray covid19 dataset that I've collated/organized**](https://drive.google.com/file/d/1AfC8emc3mGCfIYo1jK-R6suK7a2Kv2m2/view?usp=sharing) from [Dr. Cohen's collation](https://github.com/ieee8023/covid-chestxray-dataset). Ensure the extracted **"xray_dataset_covid19"** folder is in the same directory as the python files in this repository.
 5. Run doOnlineInference function from [my version of the original code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser.py) on any of the test data from the 2 gigabytes kaggle directory, or on the single positive covid-19 example [seen in this repository](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/ct-scans/covid-19-positive/coronavirus_positive_WeifangKong_et-al.png), that was taken from [figure 1a](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200028&fig=fig1a) of this [recent covid-19 paper](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200028).
 
 # Code setup (graphical user interface)
@@ -156,7 +156,7 @@ Note that despite the ~900+ infection-case number reported via China on January 
 
 # TRAINING ON NEW COVID19 DATA
 
-The "renderConfusionMetrics" instance in Section D (bottom of ["covid19_ai_diagnoser_optimal_model_architecture.py"](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser_optimal_model_architecture.py) file) can facilitate training of new covid19 images placed in **_xray_dataset_covid19/train_** and or **_xray_dataset_covid19/test_**.
+The "renderConfusionMetrics" instance in Section D (bottom of ["covid19_ai_diagnoser_optimal_model_architecture.py"](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser_optimal_model_architecture.py) file) can facilitate training of new covid19 images placed in **_xray_dataset_covid19/train..._** and or **_xray_dataset_covid19/test..._**.
 
 This is done by simply placing your images in the directories above, then changing the "_False_" parameter to "True", and running the ["covid19_ai_diagnoser_optimal_model_architecture.py"](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser_optimal_model_architecture.py) file. 
 
