@@ -1,5 +1,14 @@
 Jordan Micah Bennett, software engineer/creator of ["RobotizeJa"](https://github.com/JordanMicahBennett/ROBOTIZE_JA).
 
+# REGULAR PNEUMONIA AND COVID19 DETECTION
+Based on suggestions by Andrei, Jordan has updated this system such that it does both regular pneumonia detection and covid19 pnemonia detection, using separate convolutional neural network models, via two different buttons seen below:
+
+![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage1b_TriggerLoadImage-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
+
+This seeks to increase the robustness of the predictions made by the system.
+
+
+
 # SMART-XRAY (+CT) -SCAN_BASED-COVID19_VIRUS_DETECTOR
 The aim is to develop a quick way to detect the nCov 2019 (Coronavirus 2019/2020, also called disease: "Covid-19" stemming from virus: ["SARS-CoV-2"](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/naming-the-coronavirus-disease-(covid-2019)-and-the-virus-that-causes-it)) strain, with the plan to use artificial neural networks or other machine learning model types.
 
@@ -101,9 +110,9 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
   ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Welcome-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
 
   * Select/Files > Load an image:
-  ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage1_TriggerLoadImage-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
+  ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage1b_TriggerLoadImage-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
   
-  * Select an image that pertains to a suspected case, although in the Screenshot:
+  * Select an image that pertains to a suspected case:
   ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage2_SelectImage-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
   
   * Notice the log with the results of the neural network's prediction above the large blue arrow, and the image has been loaded for viewing right of small blue arrow:
@@ -158,6 +167,6 @@ My advice to Ministry of Health (February 17, 2020): https://drive.google.com/fi
 
 4. Code no longer runs on John Chang's base code. Jordan has written [new diagnoser code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser.py), to accomodate [a new code base](https://www.kaggle.com/gbellport/pneumonia-detection-96-recall-91-accuracy/).
    * For the task of pneumonia detection, the new code base has far higher sensitivity/recall (~89%), specificity (~88%) as seen [in the new screenshot](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/___pneumonia_detector_accuracy.png), compared to John Chang's code, which had: sensitivity/recall (~33%), specificity (~67%).
-   * For the task of Covid19 detection, with the pneumonia model that wasn't specifically trained for Covid19, this is the outcome: Sensitivity/Specificity/Accuracy of ~48%/~96%/~72% respectively.
+   * For the task of Covid19 detection, with the pneumonia model that wasn't specifically trained for Covid19, this is the outcome: Sensitivity/Specificity/Accuracy of ~75%/~80%/~77% respectively.
    
    
