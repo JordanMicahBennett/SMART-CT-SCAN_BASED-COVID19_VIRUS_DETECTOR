@@ -8,6 +8,7 @@
 #3. Other pyplot related code removed.
 #4. Confusion Matrix Format added, as quick explanation of Confusion Matrix that was already included.
 #5. Specificty calculation and relevant label added.
+#6. Many other modifications
 
 
 # General libraries
