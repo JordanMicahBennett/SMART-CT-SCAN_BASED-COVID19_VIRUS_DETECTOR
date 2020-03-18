@@ -26,7 +26,7 @@ class Window(Frame):
         self.pack(fill=BOTH, expand=1)
         
         load = Image.open("covid19_ai_diagnoser_default__.jpg")
-        render = ImageTk.PhotoImage(load)
+        render = ImageTk.PhotoImage(load, master=root)
         img = Label(self, image=render)
         img.image = render
         img.place(x=(int(screenWidth)/2)-load.width/2, y=((int(screenHeight)/2))-load.height/2)
@@ -62,7 +62,7 @@ def loadImageFromDialog():
 def loadImageFromName(filename):
     app._PRIOR_IMAGE.destroy() #destroy old image
     load = Image.open(filename)
-    render = ImageTk.PhotoImage(load)
+    render = ImageTk.PhotoImage(load, master=None)
     img = Label(image=render)
     img.image = render
     img.place(x=(int(screenWidth)/2)-load.width/2, y=((int(screenHeight)/2))-load.height/2)
