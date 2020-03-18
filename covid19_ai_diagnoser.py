@@ -11,7 +11,7 @@ model = covid19_ai_diagnoser_optimal_model_architecture.model
 #Function written by Jordan to simply collate prediction given image path, based on original code https://github.com/JohnChangUK/Pneumonia-Kaggle/blob/master/test_model_prediction.ipynb
 def doOnlineInference (imagePath):
     test_data = []
-    img = covid19_ai_diagnoser_optimal_model_architecture.plt.imread(imagePath)
+    img = covid19_ai_diagnoser_optimal_model_architecture.cv2.imread(imagePath,0) #Replace plt.imread, with  gray scale cv2.imread(path,0), so that ui's image load process doesn't throw a pyimage10 error
     img = covid19_ai_diagnoser_optimal_model_architecture.cv2.resize(img, (covid19_ai_diagnoser_optimal_model_architecture.img_dims, covid19_ai_diagnoser_optimal_model_architecture.img_dims))
     img = covid19_ai_diagnoser_optimal_model_architecture.np.dstack([img, img, img])
     img = img.astype('float32') / 255
