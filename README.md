@@ -1,11 +1,5 @@
 Jordan Micah Bennett, software engineer/creator of ["RobotizeJa"](https://github.com/JordanMicahBennett/ROBOTIZE_JA).
 
-# NON-COVID19 PNEUMONIA AND COVID19 PNEUMONIA DETECTION
-Based on suggestions by Andrei, Jordan has updated this system such that it does both regular pneumonia detection and covid19 pnemonia detection, using separate convolutional neural network models, via two different buttons seen below:
-
-![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage1c_TriggerLoadImage-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
-
-This seeks to increase the robustness of the predictions made by the system.
 
 
 
@@ -19,6 +13,18 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 * This can also reasonably allow for less experienced medical personnel to make preliminary diagnoses, expanding the diagnosis efforts overall. This effort may contribute towards virus-control progress, together with [other ai based endeavours being developed across the globe, such as use of ai for vaccine development.](https://www.facebook.com/ProgrammingGodJordan/posts/876578989467795)
 
 * **This convolutional neural network architecture can reasonably also be trained on CT-Scan image data (that many Covid19 papers seem to concern), separate from the Xray data (from the non-Covid19 Pneumonia Kaggle Process) upon which training occured.**
+
+
+
+# NON-COVID19 PNEUMONIA AND COVID19 PNEUMONIA DETECTION
+Based on suggestions by [Andrei Marinescu](https://www.facebook.com/mvandrei), Jordan has updated this system such that it does both regular pneumonia detection and covid19 pnemonia detection, using separate convolutional neural network models, via two different buttons seen below:
+
+![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage1c_TriggerLoadImage-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
+
+This seeks to increase the robustness of the predictions made by the system.
+
+Sensitivity/Specificity/Accuracy of ~75%/~80%/~77% respectively, as seen [in this screenshot](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/____covid19Accuracy.png)
+
 
 
 # Xray Scan Test Viability
