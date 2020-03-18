@@ -1,6 +1,9 @@
 #Original code: https://www.kaggle.com/gbellport/pneumonia-detection-96-recall-91-accuracy/output
-#Code modified by Jordan Bennett, and converted from .pynb to .py using https://jupyter.org/try
-
+#Code modified by Jordan Bennett , and converted from .pynb to .py using https://jupyter.org/try
+#Modifications : 
+#1. Model training components removed. (Saved weight loading takes place instead)
+#2. Replace pyplot -> plt.imread, with  gray scale cv2.imread(path,0), so that ui's image load process doesn't throw a pyimage10 error
+#3. Other pyplot related code removed.
 
 #################################
 ##Define model architecture
@@ -11,7 +14,7 @@ import os
 import numpy as np
 import random
 import cv2
-import matplotlib.pyplot as plt
+
 
 
 # Deep learning libraries
@@ -37,17 +40,6 @@ tf.set_random_seed(seed)
 
 # input_path = '../input/chest_xray/chest_xray/'
 input_path = 'xray_dataset/'
-
-fig, ax = plt.subplots(2, 3, figsize=(15, 7))
-ax = ax.ravel()
-plt.tight_layout()
-
-for i, _set in enumerate(['train', 'val', 'test']):
-    set_path = input_path+_set
-    ax[i].imshow(plt.imread(set_path+'/NORMAL/'+os.listdir(set_path+'/NORMAL')[0]), cmap='gray')
-    ax[i].set_title('Set: {}, Condition: Normal'.format(_set))
-    ax[i+3].imshow(plt.imread(set_path+'/PNEUMONIA/'+os.listdir(set_path+'/PNEUMONIA')[0]), cmap='gray')
-    ax[i+3].set_title('Set: {}, Condition: Pneumonia'.format(_set))
 
 
 # In[3]:
@@ -99,7 +91,7 @@ def process_data(img_dims, batch_size):
 
     for cond in ['/NORMAL/', '/PNEUMONIA/']:
         for img in (os.listdir(input_path + 'test' + cond)):
-            img = plt.imread(input_path+'test'+cond+img)
+            img = cv2.imread(input_path+'test'+cond+img,0) #Replace plt.imread, with  gray scale cv2.imread(path,0), so that ui's image load process doesn't throw a pyimage10 error
             img = cv2.resize(img, (img_dims, img_dims))
             img = np.dstack([img, img, img])
             img = img.astype('float32') / 255
