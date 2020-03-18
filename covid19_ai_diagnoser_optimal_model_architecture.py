@@ -1,9 +1,13 @@
 #Original code: https://www.kaggle.com/gbellport/pneumonia-detection-96-recall-91-accuracy/output
 #Code modified by Jordan Bennett , and converted from .pynb to .py using https://jupyter.org/try
-#Modifications : 
+
+######################
+# Jordan's modifications : 
 #1. Model training components removed. (Saved weight loading takes place instead)
 #2. Replace pyplot -> plt.imread, with  gray scale cv2.imread(path,0), so that ui's image load process doesn't throw a pyimage10 error
 #3. Other pyplot related code removed.
+#4. Confusion Matrix Format added, as quick explanation of Confusion Matrix that was already included.
+#5. Specificty calculation and relevant label added.
 
 #################################
 ##Define model architecture
