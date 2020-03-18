@@ -23,7 +23,7 @@ Based on suggestions by [Andrei Marinescu](https://www.facebook.com/mvandrei), J
 
 This seeks to increase the robustness of the predictions made by the system.
 
-Sensitivity/Specificity/Accuracy of ~75%/~80%/~77% respectively, as seen [in this screenshot](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/____covid19Accuracy.png)
+On the task of Covid19 detection, Sensitivity/Specificity/Accuracy are ~75%/~80%/~77% respectively, as seen [in this screenshot](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/____covid19Accuracy.png), (although the model has been trained specifically on a [pneumonia dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/download), but not covid19 dataset).
 
 
 
