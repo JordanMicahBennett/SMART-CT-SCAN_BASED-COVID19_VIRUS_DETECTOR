@@ -123,6 +123,8 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 2. [Images](http://images.rsna.org/index.html?doi=10.1148/ryct.2020200034&fig=fig1) from recent covid-19 study: ["Imaging Profile of the COVID-19 Infection: Radiologic Findings and Literature Review"](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200034)
 
+3. [+21 axial lung images, +11 lateral view lung images, and about +118 coronal view lung images, re Covid19 positive cases](https://github.com/ieee8023/covid-chestxray-dataset), by [Dr. Joseph Cohen](https://josephpcohen.com/w/). Train with caution, i.e. it is reasonable to select one type of view format, for pretrained model, training process, and inference/testing cycle.
+
 # REAL TIME TRACKING OF NCOV 2019/2020
 
 By extension, [the tool by researchers at John Hopkins University](https://edition.cnn.com/2020/01/29/health/coronavirus-map-real-time-tracking-trnd/index.html) below, is useful for real time tracking of nCov:
@@ -155,4 +157,5 @@ My advice to Ministry of Health (February 17, 2020): https://drive.google.com/fi
 
 4. Code no longer runs on John Chang's base code. Jordan has written [new diagnoser code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser.py), to accomodate [a new code base](https://www.kaggle.com/gbellport/pneumonia-detection-96-recall-91-accuracy/).
    * For the task of pneumonia detection, the new code base has far higher sensitivity/recall (~89%), specificity (~88%) as seen [in the new screenshot](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/___pneumonia_detector_accuracy.png), compared to John Chang's code, which had: sensitivity/recall (~33%), specificity (~67%).
+   
    
