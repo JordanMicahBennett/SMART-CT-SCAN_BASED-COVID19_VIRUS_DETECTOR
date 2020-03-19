@@ -26,6 +26,7 @@ This seeks to increase the robustness of the predictions made by the system.
 
 On the task of Covid19 detection, so far, with the very limited data available, Sensitivity/Specificity/Accuracy are ~75%/~80%/~77% respectively, as seen [in this screenshot](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/____covid19Accuracy.png), (although the model has been trained specifically on a [pneumonia dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/download), but not covid19 dataset).
 
+For the task of non-Covid19 pneumonia detection, the new code base has: Sensitivity/Specificity/Accuracy of ~89%/~88%/~89% respectively, as seen [in this screenshot](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/___pneumonia_detector_accuracy.png).
 
 
 # Xray Scan Test Viability
@@ -126,7 +127,7 @@ On the task of Covid19 detection, so far, with the very limited data available, 
   * Notice the log with the results of the neural network's prediction above the large blue arrow, and the image has been loaded for viewing right of small blue arrow:
   ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage3_ImageLoaded_PredictionMade-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
   
-  * The model is [~92% accurate](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/JordanBennett_model_accuracy%20after%20Learning%20Rate%20name%20fix%20%2B%20evaluation%20model.png) on the original task of pneumonia/non-pneumonia classification.
+  * The model is [~89% accurate](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/JordanBennett_model_accuracy%20after%20Learning%20Rate%20name%20fix%20%2B%20evaluation%20model.png) on the original task of pneumonia/non-pneumonia classification.
 
 **CT Scan Manual Diagnosis and Explosion in infection reports**
 
