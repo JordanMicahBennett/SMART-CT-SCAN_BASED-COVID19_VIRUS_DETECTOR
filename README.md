@@ -17,7 +17,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 
 # NON-COVID19 PNEUMONIA AND COVID19 PNEUMONIA DETECTION
-Based on suggestions by [Andrei Marinescu](https://www.facebook.com/mvandrei), Jordan has updated this system such that it does both regular pneumonia detection and covid19 pnemonia detection, using separate convolutional neural network models, via two different buttons seen below:
+Based on suggestions by [Andrei Marinescu](https://www.facebook.com/mvandrei), Jordan has updated this system such that it does both non-covid19 pneumonia detection and covid19 pneumonia detection, using separate convolutional neural network models, via two different droplist options seen below:
 
 ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage1e_TriggerLoadImage-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
 
