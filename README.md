@@ -14,7 +14,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 * **This convolutional neural network architecture can reasonably also be trained on CT-Scan image data (that many Covid19 papers seem to concern), separate from the Xray data (from the non-Covid19 Pneumonia Kaggle Process) upon which training occured.**
 
-* Countries with aggressive/thorough testing, seem to face lower mortality rates (eg [South Korea, <1% mortality rate](https://www.businessinsider.com/south-korea-coronavirus-testing-death-rate-2020-3)) versus countries with terrible/barely existent testing/screening, (eg [USA >3.5% mortality rate, close to the global mortality rate of ~3.4%](https://www.businessinsider.com/us-worlds-highest-coronavirus-death-rate-limited-testing-2020-3)). This project serves to contribute to extensive testing efforts, to help minimize spread.
+* Countries with aggressive/thorough testing, seem to face lower mortality rates (eg [South Korea, <1% mortality rate](https://www.businessinsider.com/south-korea-coronavirus-testing-death-rate-2020-3)) versus countries with terrible/barely existent testing/screening, (eg [USA >3.5% mortality rate, close to the global mortality rate of ~3.4%](https://www.businessinsider.com/us-worlds-highest-coronavirus-death-rate-limited-testing-2020-3)). This project serves to contribute to extensive testing efforts, to help minimize spread potentially exponential spread in newly affected regions, and otherwise aid in control even after wide-spread.
 
 
 # NON-COVID19 PNEUMONIA AND COVID19 PNEUMONIA DETECTION
