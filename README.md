@@ -16,6 +16,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 * Countries with aggressive/thorough testing, seem to face lower mortality rates (eg [South Korea, <1% mortality rate](https://www.businessinsider.com/south-korea-coronavirus-testing-death-rate-2020-3)) versus countries with terrible/barely existent testing/screening, (eg [USA >3.5% mortality rate, close to the global mortality rate of ~3.4%](https://www.businessinsider.com/us-worlds-highest-coronavirus-death-rate-limited-testing-2020-3)). This project serves to contribute to extensive testing efforts, to help minimize potentially exponential spread in newly affected regions, and otherwise aid in control even after wide-spread.
 
+* Epidemiologist Larry Brilliant, (helped to stop smallpox), [says we can beat the novel coronavirus—but first, we need lots more testing](https://www.wired.com/story/coronavirus-interview-larry-brilliant-smallpox-epidemiologist/). 
 
 # NON-COVID19 PNEUMONIA AND COVID19 PNEUMONIA DETECTION
 Based on suggestions by [Andrei Marinescu](https://www.facebook.com/mvandrei), Jordan has updated this system such that it does both non-covid19 pneumonia detection and covid19 pneumonia detection, using separate convolutional neural network models, via two different droplist options seen below:
