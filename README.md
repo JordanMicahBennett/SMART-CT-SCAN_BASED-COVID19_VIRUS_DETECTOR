@@ -6,13 +6,13 @@ Jordan Micah Bennett, software engineer/creator of ["RobotizeJa"](https://github
 # SMART-XRAY (+CT) -SCAN_BASED-COVID19_VIRUS_DETECTOR
 The aim is to develop a quick way to detect the nCov 2019 (Coronavirus 2019/2020, also called disease: "Covid-19" stemming from virus: ["SARS-CoV-2"](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/naming-the-coronavirus-disease-(covid-2019)-and-the-virus-that-causes-it)) strain, with the plan to use artificial neural networks or other machine learning model types.
 
-This project began on January 29, 2020, here: [SMART-CORONA_VIRUS_DETECTOR](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR). This Xray-scan version began on [Feb 9, 2020.](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/graphs/contributors)
+This project began on January 29, 2020, here: [SMART-CORONA_VIRUS_DETECTOR](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR). This Xray-scan version (also the first known global attempt/publication of image based Ai nCov/Covid19 diagnosis code) began on [Feb 9, 2020.](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/graphs/contributors)
 
 As this is the first known attempt, [commencing on January 29 2020](https://github.com/JordanMicahBennett/SMART-CORONA_VIRUS_DETECTOR/commit/49984b40847eb168800f0874bae7f8a0f2e20991) aimed at collaborating to construct this type of program, please point to open source packages with similar goals. Please email jordanmicahbennett@gmail.com.
 
 * This can also reasonably allow for less experienced medical personnel to make preliminary diagnoses, expanding the diagnosis efforts overall. This effort may contribute towards virus-control progress, together with [other ai based endeavours being developed across the globe, such as use of ai for vaccine development.](https://www.facebook.com/ProgrammingGodJordan/posts/876578989467795)
 
-* **This convolutional neural network architecture can reasonably also be trained on CT-Scan image data (that many Covid19 papers seem to concern), separate from the Xray data (from the non-Covid19 Pneumonia Kaggle Process) upon which training occured.**
+* **This convolutional neural network architecture can reasonably also be trained on CT-Scan image data (that many Covid19 papers seem to concern), separate from the Xray data (from the non-Covid19 Pneumonia Kaggle Process) upon which training occurred.**
 
 * Countries with aggressive/thorough testing, seem to face lower mortality rates (eg [South Korea, <1% mortality rate](https://www.businessinsider.com/south-korea-coronavirus-testing-death-rate-2020-3)) versus countries with terrible/barely existent testing/screening, (eg [USA >3.5% mortality rate, close to the global mortality rate of ~3.4%](https://www.businessinsider.com/us-worlds-highest-coronavirus-death-rate-limited-testing-2020-3)). This project serves to contribute to extensive testing efforts, to help minimize potentially exponential spread in newly affected regions, and otherwise aid in control even after wide-spread.
 
@@ -67,7 +67,7 @@ For the task of non-Covid19 pneumonia detection, the new code base has: Sensitiv
 
 * The nCov 2019 (Coronavirus Strain 2019/2020) is spreading rapidly, with a [mortality rate between 2% and 4%](https://www.worldometers.info/coronavirus/).  
     * By comparison, the common flu with a **far lower mortality rate of .1%**, [kills 291,000 to 646,000](https://www.medicinenet.com/script/main/art.asp?articlekey=208914) per year.
-    * Things get worse; nCov spreads at ~tripple the transmission rate of the common flu. 
+    * Things get worse; nCov spreads at ~triple the transmission rate of the common flu. 
        * Common flu RO = 1.28 ([Estimated, transmission rate](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480))
        * nCov RO = 2.5 to 3.8 ([Estimated transmission rate](https://www.sciencenews.org/article/how-new-wuhan-coronavirus-stacks-up-against-sars-mers))
             * Recent nCov RO estimate [~4.08](https://www.medrxiv.org/content/10.1101/2020.01.27.20018952v1)!
@@ -155,7 +155,7 @@ By extension, [the tool by researchers at John Hopkins University](https://editi
 
 https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
 
-Note that despite the ~900+ infection-case number reported via China on January 24, by stark contrast, a [medical scientific paper estimated that ~105,000+ infections actually occured at that time](https://www.medrxiv.org/content/10.1101/2020.01.23.20018549v2.full.pdf). 
+Note that despite the ~900+ infection-case number reported via China on January 24, by stark contrast, a [medical scientific paper estimated that ~105,000+ infections actually occurred at that time](https://www.medrxiv.org/content/10.1101/2020.01.23.20018549v2.full.pdf). 
 
 
 
