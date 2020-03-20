@@ -18,7 +18,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 * On March 19, 2020, Epidemiologist Larry Brilliant, (helped to stop smallpox), [says we can beat the novel coronavirus—but first, we need lots more testing](https://www.wired.com/story/coronavirus-interview-larry-brilliant-smallpox-epidemiologist/). 
 
-An optimal path is reasonably that the (~70% accurate) CDC standard polymerase method, and the (~75% to ~90% accurate Artificial Intelligence based Xray method are used in concert.
+An optimal path is reasonably that the (~70% accurate) CDC standard polymerase method, and the (~75% to ~90% accurate) Artificial Intelligence based Xray method are used in concert.
 
 # NON-COVID19 PNEUMONIA AND COVID19 PNEUMONIA DETECTION
 Based on suggestions by [Andrei Marinescu](https://www.facebook.com/mvandrei), Jordan has updated this system such that it does both non-covid19 pneumonia detection and covid19 pneumonia detection, using separate convolutional neural network models, via two different droplist options seen below:
