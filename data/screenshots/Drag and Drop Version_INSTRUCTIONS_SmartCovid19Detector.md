@@ -45,7 +45,7 @@ Part C: Usage
 
 1. This drag and drop version is slightly different from the original version Jordan prepared.
 
-2. As demonstrated at the top of this readme file in the animation or seen in the image below, this version includes an additional droplist to the right of the "Files" item, named **"Drag and Drop Diagnostic Mode Selector"**, which enables user to activate or prepare the app to do covid19 or non-covid19 detection.
+2. As demonstrated at the top of this readme file in the animation or seen in the image below, this version (also coded by Jordan) includes an additional droplist to the right of the "Files" item, named **"Drag and Drop Diagnostic Mode Selector"**, which enables user to activate or prepare the app to do covid19 or non-covid19 detection.
 	* Selecting **"Activate Non-Covid19 Mode (For Drag Drop)"** sets app to run Non-Covid19 detection on image dropped into window.
 	* Selecting **"Activate Covid19 Mode (For Drag Drop)"** sets app to run Covid19 detection on image dropped into window.
 	
