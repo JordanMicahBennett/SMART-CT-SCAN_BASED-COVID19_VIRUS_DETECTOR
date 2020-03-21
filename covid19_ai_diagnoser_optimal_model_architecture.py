@@ -283,7 +283,7 @@ inputs, output = defineModelArchitecture ( img_dims )
 # Creating model and compiling
 model_covid19PneumoniaDetector = Model(inputs=inputs, outputs=output)
 model_covid19PneumoniaDetector.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
-model_covid19PneumoniaDetector.load_weights('best_weights_kaggle_user_pneumonia2_0.hdf5')
+model_covid19PneumoniaDetector.load_weights('covid19_neural_network_weights_jordan.hdf5')
 
 
 ###################################################################
@@ -301,5 +301,5 @@ reportFileDistributions (input_path_d, ['train', 'test'])
 train_gen_d, test_gen_d, test_data_d, test_labels_d = process_data(input_path_d, img_dims, batch_size)
 
 # Reporting on accuracies
-renderConfusionMetrics ( model_covid19PneumoniaDetector, test_data_d, test_labels_d, False, train_gen_d, test_gen_d, batch_size, 10, 'covid19_weights_v2.hdf5' )
+renderConfusionMetrics ( model_covid19PneumoniaDetector, test_data_d, test_labels_d, False, train_gen_d, test_gen_d, batch_size, 11, 'covid19_neural_network_weights_jordan_v2.hdf5' )
 
