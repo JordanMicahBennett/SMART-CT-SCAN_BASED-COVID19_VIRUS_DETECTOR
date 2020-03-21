@@ -1,6 +1,8 @@
 Jordan Micah Bennett, software engineer/creator of ["RobotizeJa"](https://github.com/JordanMicahBennett/ROBOTIZE_JA).
 
 
+![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage_DragAndDropVersion_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.gif)
+_ Note: The animation above represents a drag/drop version, separate from the instance discussed on this page. This version does the same thing as the non-drag drop version, with the exception of the drag/drop feature. Drag drop version is available [here](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Drag%20and%20Drop%20Version_INSTRUCTIONS_SmartCovid19Detector.md)._
 
 
 # SMART-XRAY (+CT) -SCAN_BASED-COVID19_VIRUS_DETECTOR
