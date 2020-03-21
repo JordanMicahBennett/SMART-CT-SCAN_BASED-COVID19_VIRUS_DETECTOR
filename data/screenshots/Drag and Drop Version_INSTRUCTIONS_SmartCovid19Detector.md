@@ -1,4 +1,4 @@
-Author/Software coder: [Jordan Bennett](http://folioverse.appspot.com/]
+Author/Software coder: [Jordan Bennett](http://folioverse.appspot.com/)
 Drag and drop feature addition, suggestion by [Andrei Marinescu](https://www.facebook.com/mvandrei)
 
 Instructions
@@ -7,7 +7,7 @@ Instructions
 
 Part A:
 =============
-1. Download dnd version of Smart Covid19 detector. 
+1. Download the [Drag and Drop version of Smart Covid19 detector](https://drive.google.com/file/d/1FxcWEd0T-T5CP0NsqlhdGUJaR--T6Mzp/view?usp=sharing). 
 2. Please follow [the instructions from my original project page.](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/README.md#code-setup-basic-user-interface).
 
 
