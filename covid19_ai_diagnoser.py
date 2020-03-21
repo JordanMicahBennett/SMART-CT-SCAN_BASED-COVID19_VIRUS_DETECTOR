@@ -39,7 +39,7 @@ def doOnlineInference_covid19Pneumonia (imagePath):
     prediction = model_covid19PneumoniaDetector.predict(covid19_ai_diagnoser_optimal_model_architecture.np.array(test_data))
     _prediction = round( prediction[0][0]*100, 3 )
     if ( _prediction > 50 ):
-        _prediction = "Pneumonia detected";
+        _prediction = "Covid19 detected";
     elif ( _prediction < 50 ):
         _prediction = "Normal lungs detected";  
     outputContent = _prediction + "\n"
@@ -70,8 +70,7 @@ doOnlineInference_regularPneumonia("xray_dataset/val/PNEUMONIA/person1946_bacter
 doOnlineInference_regularPneumonia("xray_dataset/val/PNEUMONIA/person1950_bacteria_4881.jpeg")
 
 ACTUAL CORONAVIRUS SAMPLES:
-doOnlineInference_regularPneumonia("coronavirus_positive_WeifangKong_et-al.jpg")
-doOnlineInference_regularPneumonia("coronavirus_positive_day7_of_infection_UPSCALED.jpg")
+doOnlineInference_covid19Pneumonia("coronavirus_positive_WeifangKong_et-al.jpg")
+doOnlineInference_covid19Pneumonia("coronavirus_positive_day7_of_infection_UPSCALED.jpg")
 """
-
 
