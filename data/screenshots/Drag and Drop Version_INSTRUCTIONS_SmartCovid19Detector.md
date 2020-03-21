@@ -12,7 +12,7 @@ Instructions
 Part A:
 =============
 1. Download the [Drag and Drop version of Smart Covid19 detector](https://drive.google.com/file/d/1FxcWEd0T-T5CP0NsqlhdGUJaR--T6Mzp/view?usp=sharing). 
-2. Please follow [the instructions from my original project page.](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/README.md#code-setup-basic-user-interface).
+2. Please follow [the instructions from my original project page, except this time apply those instructions to the Drag and Drop google drive contents instead.](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/README.md#code-setup-basic-user-interface).
 
 
 Alternatively, one may copy files, if one had already downloaded all items for the non-drag and drop version.
