@@ -1,5 +1,9 @@
 Author/Software coder: [Jordan Bennett](http://folioverse.appspot.com/)
+
 Drag and drop feature addition, suggestion by [Andrei Marinescu](https://www.facebook.com/mvandrei)
+
+
+
 
 Instructions
 =============
