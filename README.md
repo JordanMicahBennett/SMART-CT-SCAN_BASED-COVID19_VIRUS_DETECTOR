@@ -196,4 +196,6 @@ My advice to Ministry of Health (February 17, 2020): https://drive.google.com/fi
    * For the task of pneumonia detection, the new code base has far higher Sensitivity/Specificity/Accuracy of ~89%/~88%/~89% respectively, as seen [in the new screenshot](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/___pneumonia_detector_accuracy.png), compared to John Chang's code, which had: sensitivity/recall (~33%), specificity (~67%).
    * For the task of Covid19 detection, this is the outcome: [Sensitivity/Specificity/Accuracy of ~85%/~70%/~77% respectively;](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/___covid19_accuracy%20--%2077_85_70%20acc_sens_spec___.png) ...where the model has been trained on a [covid19 dataset I organized](https://drive.google.com/file/d/1AfC8emc3mGCfIYo1jK-R6suK7a2Kv2m2/view?usp=sharing).
    
-   
+5. [A separate instance of the Smart Covid19 Detector, that includes Drag and drop functionality, has been produced](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Drag%20and%20Drop%20Version_INSTRUCTIONS_SmartCovid19Detector.md).
+
+![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage_DragAndDropVersion_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.gif)
