@@ -199,7 +199,7 @@ def reportFileDistributions (___inputPath, directoryProcessArray ):
     for _set in directoryProcessArray:
         n_normal = len(os.listdir(___inputPath + _set + '/NORMAL'))
         n_infect = len(os.listdir(___inputPath + _set + '/PNEUMONIA'))
-        print('Set: {}, normal images: {}, diagnosis images: {}'.format(_set, n_normal, n_infect))
+        print('Set: {}, normal images: {}, illness-positive images: {}'.format(_set, n_normal, n_infect))
 
 
 
