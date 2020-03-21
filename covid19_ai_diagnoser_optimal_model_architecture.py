@@ -248,7 +248,7 @@ model_pneumoniaDetector.load_weights('best_weights_kaggle_user_pneumonia2_0.hdf5
 
 ########################################################################
 #SECTION B: NON-COVID19  PNEUMONIA VS NORMAL LUNG ACCURACY REPORT [LOADED MODEL/WEIGHTS]
-print('\n\n#######NON-COVID19 PNEUMONIA VS NORMAL LUNG TEST REPORT [LOADED MODEL/WEIGHTS]')
+print('\n\n#######TRAINED NON-COVID19 PNEUMONIA VS NORMAL LUNG TEST REPORT [LOADED MODEL/WEIGHTS]')
 # Lets first look at some of our X-ray images and how each dataset is distributed:
 
 input_path_b = 'xray_dataset/'
