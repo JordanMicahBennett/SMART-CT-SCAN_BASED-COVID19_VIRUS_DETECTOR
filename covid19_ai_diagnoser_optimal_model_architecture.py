@@ -195,11 +195,11 @@ def process_data(___inputPath, img_dims, batch_size):
 ###########
 #Util Component 4: Report file distributions
 #directoryProcessArray eg, = ['train', 'val', 'test'], in the case that training val and test folders exist in sub-dir for processing.
-def reportFileDistributions (___inputPath, directoryProcessArray):
+def reportFileDistributions (___inputPath, directoryProcessArray ):
     for _set in directoryProcessArray:
         n_normal = len(os.listdir(___inputPath + _set + '/NORMAL'))
         n_infect = len(os.listdir(___inputPath + _set + '/PNEUMONIA'))
-        print('Set: {}, normal images: {}, regular pneumonia images: {}'.format(_set, n_normal, n_infect))
+        print('Set: {}, normal images: {}, diagnosis images: {}'.format(_set, n_normal, n_infect))
 
 
 
@@ -237,7 +237,7 @@ tf.set_random_seed(seed)
 
 
 ########################################################################
-#SECTION A: MODEL ARCHITECTURE REGULAR PNEUMONIA DETECTOR
+#SECTION A: MODEL ARCHITECTURE NON-COVID19 PNEUMONIA DETECTOR
 
 inputs, output = defineModelArchitecture ( img_dims )
 
@@ -247,8 +247,8 @@ model_pneumoniaDetector.compile(optimizer='adam', loss='binary_crossentropy', me
 model_pneumoniaDetector.load_weights('best_weights_kaggle_user_pneumonia2_0.hdf5')
 
 ########################################################################
-#SECTION B: REGULAR PNEUMONIA VS NORMAL LUNG ACCURACY REPORT [LOADED MODEL/WEIGHTS]
-print('\n\n#######REGULAR PNEUMONIA VS NORMAL LUNG TEST REPORT [LOADED MODEL/WEIGHTS]')
+#SECTION B: NON-COVID19  PNEUMONIA VS NORMAL LUNG ACCURACY REPORT [LOADED MODEL/WEIGHTS]
+print('\n\n#######NON-COVID19 PNEUMONIA VS NORMAL LUNG TEST REPORT [LOADED MODEL/WEIGHTS]')
 # Lets first look at some of our X-ray images and how each dataset is distributed:
 
 input_path_b = 'xray_dataset/'
