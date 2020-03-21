@@ -288,7 +288,7 @@ model_covid19PneumoniaDetector.load_weights('covid19_neural_network_weights_jord
 
 ###################################################################
 #SECTION D: COVID19 PNEUMONIA VS NORMAL LUNG ACCURACY REPORT [LOADED MODEL/WEIGHTS]
-print('\n\n#######UNTRAINED COVID19 PNEUMONIA VS NORMAL LUNG TEST REPORT [LOADED MODEL/WEIGHTS]')
+print('\n\n#######TRAINED COVID19 PNEUMONIA VS NORMAL LUNG TEST REPORT [LOADED MODEL/WEIGHTS]')
       
 #Jordan_note establish custom_path for covid 19 test data
 input_path_d = 'xray_dataset_covid19/'
