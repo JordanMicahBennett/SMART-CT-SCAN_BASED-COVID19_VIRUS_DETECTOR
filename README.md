@@ -168,7 +168,7 @@ This is done by simply placing your images in the directories above, then changi
    * If the last _.hdf5_ weights parameter is changed, the **_model_covid19PneumoniaDetector.load_weights_** parameter will also require change in the same "Section D" only.
 
 ```python
-renderConfusionMetrics ( model_covid19PneumoniaDetector, test_data_d, test_labels_d, False, train_gen_d, test_gen_d, batch_size, 25, 'covid19_weights_v3.hdf5' )
+renderConfusionMetrics ( model_covid19PneumoniaDetector, test_data_d, test_labels_d, False, train_gen_d, test_gen_d, batch_size, 25, 'covid19_neural_network_weights_jordan.hdf5' )
 ```
 
 
