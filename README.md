@@ -129,10 +129,9 @@ For the task of non-Covid19 pneumonia detection, the new code base has: Sensitiv
   * Select an image that pertains to a suspected case:
   ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage2_SelectImage-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
   
-  * Notice the log with the results of the neural network's prediction above the large blue arrow, and the image has been loaded for viewing right of small blue arrow:
-  ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage3_ImageLoaded_PredictionMade-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
-  
-  * The model is [~89% accurate](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/JordanBennett_model_accuracy%20after%20Learning%20Rate%20name%20fix%20%2B%20evaluation%20model.png) on the original task of pneumonia/non-pneumonia classification.
+  * Notice the log with the results of the neural network's prediction in the text area below the image:
+  ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/_Usage3_ImageLoaded_PredictionMade-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
+
 
 **CT Scan Manual Diagnosis and Explosion in infection reports**
 
