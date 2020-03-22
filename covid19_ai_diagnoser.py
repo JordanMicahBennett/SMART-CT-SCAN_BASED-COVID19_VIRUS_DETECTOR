@@ -23,7 +23,7 @@ def doOnlineInference_regularPneumonia (imagePath):
     elif ( _prediction < 50 ):
         _prediction = "Normal lungs detected";  
     outputContent = _prediction + "\n"
-    outputContent += "Raw Neural Network Output : " + str(prediction[0][0]) + "\n\n"
+    outputContent += "Raw Neural Network Output : " + str(prediction[0][0]) + ". A value closer to 1 signifies illness, while a value closer to 0 signifies normalness.\n\n"
     recordInferenceEvent (imagePath, outputContent)
     return outputContent
 
@@ -43,7 +43,7 @@ def doOnlineInference_covid19Pneumonia (imagePath):
     elif ( _prediction < 50 ):
         _prediction = "Normal lungs detected";  
     outputContent = _prediction + "\n"
-    outputContent += "Raw Neural Network Output : " + str(prediction[0][0]) + "\n\n"
+    outputContent += "Raw Neural Network Output : " + str(prediction[0][0]) + ". A value closer to 1 signifies illness, while a value closer to 0 signifies normalness.\n\n"
     recordInferenceEvent (imagePath, outputContent)
     return outputContent
 
