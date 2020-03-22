@@ -1,7 +1,7 @@
 Jordan Micah Bennett, software engineer/creator of ["RobotizeJa"](https://github.com/JordanMicahBennett/ROBOTIZE_JA).
 
 
-![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage_DragAndDropVersion_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.gif)
+![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/_Usage_DragAndDropVersion_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.gif)
 _Note: The animation above represents a Drag&Drop version, separate from the instance discussed on this page. The Drag&Drop version version does the same thing as the non-Drag&Drop version, with the exception of the Drag&Drop feature. The Drag&Drop version is available [here](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Drag%20and%20Drop%20Version_INSTRUCTIONS_SmartCovid19Detector.md)._
 
 
@@ -200,4 +200,4 @@ My advice to Ministry of Health (February 17, 2020): https://drive.google.com/fi
    
 5. [A separate instance of the Smart Covid19 Detector, that includes Drag and drop functionality, has been produced](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Drag%20and%20Drop%20Version_INSTRUCTIONS_SmartCovid19Detector.md).
 
-![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/Usage_DragAndDropVersion_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.gif)
+![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/_Usage_DragAndDropVersion_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.gif)
