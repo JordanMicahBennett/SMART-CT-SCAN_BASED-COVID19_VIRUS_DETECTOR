@@ -3,7 +3,7 @@ Author/Software coder: [Jordan Bennett](http://folioverse.appspot.com/)
 Drag and drop feature addition, suggestion by [Andrei Marinescu](https://www.facebook.com/ProgrammingGodJordan/posts/906357816489912)
 
 
-![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/_Usage_DragAndDropVersion_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan_.gif?raw=true)
+![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/screenshots/_dndv2_Usage_DragAndDropVersion_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan_.gif?raw=true)
 
 
 Instructions
