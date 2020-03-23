@@ -88,7 +88,8 @@ def loadRegularPneumoniaImageFromName(filename):
     print(app.DIAGNOSIS_RESULT)
     app._PRIOR_IMAGE = img #set latest instance of old image
     app.addDiagnosisResult(app.DIAGNOSIS_RESULT)
-
+    enableDiagnosisResultColouring ( )
+    
 def loadCovid19ImageFromDialog():
     currdir = os.getcwd()
     image_file = filedialog.askopenfile(mode ='r', parent=root, initialdir=currdir, title='Please select an Xray Image of suspected coronavirus2019 case:')
@@ -108,10 +109,27 @@ def loadCovid19ImageFromName(filename):
     print(app.DIAGNOSIS_RESULT)
     app._PRIOR_IMAGE = img #set latest instance of old image
     app.addDiagnosisResult(app.DIAGNOSIS_RESULT)
+    enableDiagnosisResultColouring ( )
 
 # Adding a load image button to the cascade menu "File"
 filemenu.add_command(label="Load image to test for pneumonia", command=loadRegularPneumoniaImageFromDialog)
 filemenu.add_command(label="Load image to test for covid-19", command=loadCovid19ImageFromDialog)
+
+def colourDiagnosisMessageText ( diagnosisContent, startIndexText, endIndexText ):
+    #If pneumonia or covid19 is detected
+    if ( covid19_ai_diagnoser.DIAGNOSIS_MESSAGES[0] in diagnosisContent or covid19_ai_diagnoser.DIAGNOSIS_MESSAGES[1] in diagnosisContent ):
+        app.DIAGNOSIS_RESULT_FIELD.tag_add("DIAGNOSIS_RESULT_MESSAGE", startIndexText, endIndexText)
+        app.DIAGNOSIS_RESULT_FIELD.tag_configure("DIAGNOSIS_RESULT_MESSAGE", background="red", foreground ="white")
+
+    #If normal lungs state is detected
+    if ( covid19_ai_diagnoser.DIAGNOSIS_MESSAGES[2] in diagnosisContent ):
+        app.DIAGNOSIS_RESULT_FIELD.tag_add("DIAGNOSIS_RESULT_MESSAGE", startIndexText, endIndexText)
+        app.DIAGNOSIS_RESULT_FIELD.tag_configure("DIAGNOSIS_RESULT_MESSAGE", background="green", foreground ="white")
+        
+
+def enableDiagnosisResultColouring ( ):
+    diagnosisResultFieldContent = app.DIAGNOSIS_RESULT_FIELD.get("1.0","end")
+    colourDiagnosisMessageText ( diagnosisResultFieldContent, "4.0", "4.21" )
 
 ############
 #root cycle
