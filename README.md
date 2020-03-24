@@ -23,7 +23,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 An optimal path is reasonably that the (~70% accurate) CDC standard polymerase method, and the (~75% to ~90% accurate) Artificial Intelligence based Xray method are used in concert.
 
 # NON-COVID19 PNEUMONIA AND COVID19 PNEUMONIA DETECTION
-Based on suggestions by [Andrei Marinescu](https://www.facebook.com/mvandrei), Jordan has updated this system such that it does both non-covid19 pneumonia detection and covid19 pneumonia detection, using separate convolutional neural network models, via two different droplist options seen below:
+Based on suggestions by [Andrei Marinescu](https://www.facebook.com/ProgrammingGodJordan/posts/906357816489912), Jordan has updated this system such that it does both non-covid19 pneumonia detection and covid19 pneumonia detection, using separate convolutional neural network models, via two different droplist options seen below:
 
 ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/raw/master/data/screenshots/_Usage1g_TriggerLoadImage-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
 
@@ -191,7 +191,7 @@ My advice to Ministry of Health (February 17, 2020): https://drive.google.com/fi
 
 2. [Jordan updated his version of the original code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser.py), such that a compile issue is repaired, in order to facilitate accuracy evaluation of the saved/loaded (in 2 minutes on gtx 1060/i7 cpu) model without invocation of model-training function **model.fit**, which would take hours on the same machine.
 
-3. Based on [Andrei](https://www.facebook.com/mvandrei)'s suggestions, Jordan replaced erroneously labelled CT labels, with X-Ray, that Jordan had initially mis-labelled. **This correction is very important, and could influence model architecture later on.**
+3. Based on [Andrei](https://www.facebook.com/ProgrammingGodJordan/posts/906357816489912)'s suggestions, Jordan replaced erroneously labelled CT labels, with X-Ray, that Jordan had initially mis-labelled. **This correction is very important, and could influence model architecture later on.**
 
 4. Code no longer runs on John Chang's base code. Jordan has written [new diagnoser code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/covid19_ai_diagnoser.py), to accomodate [a new code base](https://www.kaggle.com/gbellport/pneumonia-detection-96-recall-91-accuracy/).
    * For the task of pneumonia detection, the new code base has far higher Sensitivity/Specificity/Accuracy of ~89%/~88%/~89% respectively, as seen [in the new screenshot](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/___pneumonia_detector_accuracy.png), compared to John Chang's code, which had: sensitivity/recall (~33%), specificity (~67%).
