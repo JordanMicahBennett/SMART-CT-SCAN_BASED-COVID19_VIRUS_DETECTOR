@@ -14,7 +14,7 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 * This can also reasonably allow for less experienced medical personnel to make preliminary diagnoses, expanding the diagnosis efforts overall. This effort may contribute towards virus-control progress, together with [other ai based endeavours being developed across the globe, such as use of ai for vaccine development.](https://www.facebook.com/ProgrammingGodJordan/posts/876578989467795)
 
-* **This convolutional neural network architecture can reasonably also be trained on CT-Scan image data (that many Covid19 papers seem to concern), separate from the Xray data (from the non-Covid19 Pneumonia Kaggle Process) upon which training occurred.**
+* **This convolutional neural network architecture can reasonably also be trained on CT-Scan image data (that many Covid19 papers seem to concern), separate from the Xray data (from the non-Covid19 Pneumonia Kaggle Process) upon which training occurred, initially, apart from the latest Covid19 training sequence on Covid19 data.**
 
 * Countries with aggressive/thorough testing, seem to face lower mortality rates (eg [South Korea, <1% mortality rate](https://www.businessinsider.com/south-korea-coronavirus-testing-death-rate-2020-3)) versus countries with terrible/barely existent testing/screening, (eg [USA >3.5% mortality rate, close to the global mortality rate of ~3.4%](https://www.businessinsider.com/us-worlds-highest-coronavirus-death-rate-limited-testing-2020-3)). This project serves to contribute to extensive testing efforts, to help minimize potentially exponential spread in newly affected regions, and otherwise aid in control even after wide-spread.
 
