@@ -27,6 +27,7 @@ Based on suggestions by [Andrei Marinescu](https://www.facebook.com/ProgrammingG
 
 ![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/raw/master/data/screenshots/_Usage1g_TriggerLoadImage-Screen_SmartAi%20Coronavirus%202019%20(Covid19)%20Diagnosis%20Interface%20by%20Jordan.png?raw=true)
 
+
 This seeks to increase the robustness of the predictions made by the system.
 
 On the task of Covid19 detection, so far, with the very limited data available, Sensitivity/Specificity/Accuracy are ~85%/~70%/~77% respectively, as seen [in this screenshot](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/___covid19_accuracy%20--%2077_85_70%20acc_sens_spec___.png), (where the model has been trained on a [covid19 dataset I organized](https://drive.google.com/file/d/1AfC8emc3mGCfIYo1jK-R6suK7a2Kv2m2/view?usp=sharing)).
@@ -53,7 +54,7 @@ For the task of non-Covid19 pneumonia detection, the new code base has: Sensitiv
 * **March 16, 2020**: [Adrian Rosebrock produced a Covid19 detector with ~90% accuracy, and ~80% sensitivity, using keras machine learning library](https://www.pyimagesearch.com/2020/03/16/detecting-covid-19-in-x-ray-images-with-keras-tensorflow-and-deep-learning/), from a recent [covid19 xray dataset released 4 days ago](https://github.com/ieee8023/covid-chestxray-dataset).
 
 * **March 22, 2020**: [Alexander et. al. release the 3rd known Open-Source Ai based Covid19 detector](https://github.com/lindawangg/COVID-Net), after [Jordan on Feb 9th](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR#smart-xray-ct--scan_based-covid19_virus_detector), then [Adrian on March 16](https://www.pyimagesearch.com/2020/03/16/detecting-covid-19-in-x-ray-images-with-keras-tensorflow-and-deep-learning/). Multi-class virus/bacterial/normal detection is performed, with 100%/80% in Sensitivity/Accuracy respectively in Covid19 detection task. 
-  * Their March 22 method though multi-class-Deep Learning based, uses my same Feb 9, binary-Deep Learning method, that combined a kaggle-xray pneumonia dataset, in combination with scare Covid19 data.
+  * Their March 22 method though multi-class-Deep Learning based, uses a similar method to my Feb 9, binary-Deep Learning method, that combined a kaggle-xray pneumonia dataset, with scarce Covid19 data.
 
 
 # Xray Test Result Time versus Dna Method (Comparison)
