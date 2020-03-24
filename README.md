@@ -36,7 +36,8 @@ For the task of non-Covid19 pneumonia detection, the new code base has: Sensitiv
 
 # Xray Scan Test Viability
 
-* **Feb 9, 2020**: I discover similarities between Covid19 and known forms of pneumonia, after which I find a few Xray-Images representing positive cases of Covid19 by Chinese authorities, where I decided to perform **_artificial intelligence based_** **Xray Image Scan diagnostics**, by using the images as inputs to an artificial intelligence based pneumonia diagnosis method **_originally published on kaggle_**. This reasoning is seen in my research/discovery process in the [Deep Learning Code section below](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR#deep-learning-codetests--code-discussion--call-for-contribution).
+* **Feb 9, 2020**: I discover similarities between Covid19 and known forms of pneumonia, after which I find a few Xray-Images representing positive cases of Covid19 by Chinese authorities, where I decided to perform **_artificial intelligence based_** **Xray Image Scan diagnostics**, by using the images as inputs to an artificial intelligence based pneumonia diagnosis method **_originally published on kaggle_**. This reasoning is seen in my research/discovery process in the [Deep Learning Code section below](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR#deep-learning-codetests--code-discussion--call-for-contribution). 
+  * **This is the first known global attempt/publication of image analysis/Artificial Intelligence based nCov/Covid19 diagnosis Open-Source code**.
 
    
 * **Feb 19, 2020**: Scientists reveal a ~98% accuracy in **_human/radiology based_** **CT Scan image based diagnostics**, compared to the popular Dna polymerase chain reaction method by CDC: ["In a series of 51 patients with chest CT and RT-PCR assay performed within 3 days, the sensitivity of CT for COVID-19 infection was ~98% compared to RT-PCR sensitivity of ~71% (p<.001)."](https://pubs.rsna.org/doi/10.1148/radiol.2020200432)
@@ -52,6 +53,7 @@ For the task of non-Covid19 pneumonia detection, the new code base has: Sensitiv
 * **March 16, 2020**: [Adrian Rosebrock produced a Covid19 detector with ~90% accuracy, and ~80% sensitivity, using keras machine learning library](https://www.pyimagesearch.com/2020/03/16/detecting-covid-19-in-x-ray-images-with-keras-tensorflow-and-deep-learning/), from a recent [covid19 xray dataset released 4 days ago](https://github.com/ieee8023/covid-chestxray-dataset).
 
 * **March 22, 2020**: [Alexander et. al. release the 3rd known Open-Source Ai based Covid19 detector](https://github.com/lindawangg/COVID-Net), after [Jordan on Feb 9th](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR#smart-xray-ct--scan_based-covid19_virus_detector), then [Adrian on March 16](https://www.pyimagesearch.com/2020/03/16/detecting-covid-19-in-x-ray-images-with-keras-tensorflow-and-deep-learning/). Multi-class virus/bacterial/normal detection is performed, with 100%/80% in Sensitivity/Accuracy respectively in Covid19 detection task. 
+  * Their March 22 method though multi-class based, uses my same Feb 9, method, that combined a kaggle-xray pneumonia dataset, in combination with scare Covid19 data.
 
 
 # Xray Test Result Time versus Dna Method (Comparison)
