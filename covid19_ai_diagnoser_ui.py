@@ -3,7 +3,7 @@
 
 import covid19_ai_diagnoser
 
-from tkinter import Frame, Tk, BOTH, Label, Menu, filedialog, messagebox
+from tkinter import Frame, Tk, BOTH, Label, Menu, filedialog, messagebox, Text
 from PIL import Image, ImageTk
 
 import os
@@ -20,7 +20,12 @@ class Window(Frame):
     #establish variable to keep track of images added to Frame, for purpose of preventing stacking @ new image additions
     #by using destroy() on each old image instance @ addition
 	#Added by Jordan Bennett, based on suggestion by Andrei Marinescu, who suggested that xray images should not stack as new ones are loaded. (https://www.facebook.com/mvandrei)
-    
+
+    DIAGNOSIS_RESULT = ""
+    DIAGNOSIS_RESULT_FIELD = None
+    #Jordan_note: Added to facilitate output window data
+
+
     def __init__(self, master=None):
         Frame.__init__(self, master)
         self.master = master
@@ -30,10 +35,18 @@ class Window(Frame):
         render = ImageTk.PhotoImage(load)
         img = Label(self, image=render)
         img.image = render
-        img.place(x=(int(screenWidth)/2)-load.width/2, y=((int(screenHeight)/2))-load.height/2)
+        img.place(x=(int(screenWidth)/2)-load.width/2, y=((int(screenHeight)/2))-load.height/2-80)
         self._PRIOR_IMAGE = img #setup prior image instance
-
-
+        self.DIAGNOSIS_RESULT_FIELD = Text(self,  width=int(screenWidth), height=13)
+        self.DIAGNOSIS_RESULT_FIELD.pack ( )
+        self.DIAGNOSIS_RESULT_FIELD.place(x=0, y=int(screenHeight)-200)
+        
+    def addDiagnosisResult (self, value):
+        self.DIAGNOSIS_RESULT_FIELD.delete("1.0","end") #clear diagnostic result text element
+        self.DIAGNOSIS_RESULT = "" #clear diagnostic result string variable
+        self.DIAGNOSIS_RESULT_FIELD.insert(1.0, value) #add new value
+        
+        
         
 root = Tk()
 app = Window(root)
@@ -53,6 +66,8 @@ menubar = Menu(root)
 filemenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Files", menu=filemenu)
 
+CONSTANT_DIAGNOSIS_IMAGE_SPAN = 480
+
 # Defining function to trigger file browser
 def loadRegularPneumoniaImageFromDialog():
     currdir = os.getcwd()
@@ -63,17 +78,18 @@ def loadRegularPneumoniaImageFromDialog():
 def loadRegularPneumoniaImageFromName(filename):
     app._PRIOR_IMAGE.destroy() #destroy old image
     load = Image.open(filename)
+    load = load.resize((CONSTANT_DIAGNOSIS_IMAGE_SPAN, CONSTANT_DIAGNOSIS_IMAGE_SPAN),Image.ANTIALIAS) #Resized "load" image to constant size on screen. However, neural network still runs on on original image scale from filename.
     render = ImageTk.PhotoImage(load)
     img = Label(image=render)
     img.image = render
-    img.place(x=(int(screenWidth)/2)-load.width/2, y=((int(screenHeight)/2))-load.height/2)
-    outputContent = "#############################################\n" + filename+"\n\n"
-    outputContent += covid19_ai_diagnoser.doOnlineInference_regularPneumonia (filename)
-    print(outputContent)
+    img.place(x=(int(screenWidth)/2)-CONSTANT_DIAGNOSIS_IMAGE_SPAN/2, y=((int(screenHeight)/2))-CONSTANT_DIAGNOSIS_IMAGE_SPAN/2-80)
+    app.DIAGNOSIS_RESULT += "**Non-Covid19 Mode Result**\n" + filename+"\n\n"
+    app.DIAGNOSIS_RESULT += covid19_ai_diagnoser.doOnlineInference_regularPneumonia (filename)
+    print(app.DIAGNOSIS_RESULT)
     app._PRIOR_IMAGE = img #set latest instance of old image
-    messagebox.showinfo(title=windowTitle + " : Result ", message=outputContent)
-
-
+    app.addDiagnosisResult(app.DIAGNOSIS_RESULT)
+    enableDiagnosisResultColouring ( )
+    
 def loadCovid19ImageFromDialog():
     currdir = os.getcwd()
     image_file = filedialog.askopenfile(mode ='r', parent=root, initialdir=currdir, title='Please select an Xray Image of suspected coronavirus2019 case:')
@@ -83,20 +99,37 @@ def loadCovid19ImageFromDialog():
 def loadCovid19ImageFromName(filename):
     app._PRIOR_IMAGE.destroy() #destroy old image
     load = Image.open(filename)
+    load = load.resize((CONSTANT_DIAGNOSIS_IMAGE_SPAN, CONSTANT_DIAGNOSIS_IMAGE_SPAN),Image.ANTIALIAS) #Resized "load" image to constant size on screen. However, neural network still runs on on original image scale from filename.
     render = ImageTk.PhotoImage(load)
     img = Label(image=render)
     img.image = render
-    img.place(x=(int(screenWidth)/2)-load.width/2, y=((int(screenHeight)/2))-load.height/2)
-    outputContent = "#############################################\n" + filename+"\n\n"
-    outputContent += covid19_ai_diagnoser.doOnlineInference_covid19Pneumonia (filename)
-    print(outputContent)
+    img.place(x=(int(screenWidth)/2)-CONSTANT_DIAGNOSIS_IMAGE_SPAN/2, y=((int(screenHeight)/2))-CONSTANT_DIAGNOSIS_IMAGE_SPAN/2-80)
+    app.DIAGNOSIS_RESULT +=  "**Covid19 Mode Result**\n" + filename+"\n\n"
+    app.DIAGNOSIS_RESULT += covid19_ai_diagnoser.doOnlineInference_covid19Pneumonia (filename)
+    print(app.DIAGNOSIS_RESULT)
     app._PRIOR_IMAGE = img #set latest instance of old image
-    messagebox.showinfo(title=windowTitle + " : Result ", message=outputContent)
-    
+    app.addDiagnosisResult(app.DIAGNOSIS_RESULT)
+    enableDiagnosisResultColouring ( )
 
 # Adding a load image button to the cascade menu "File"
-filemenu.add_command(label="Load Regular Pnuemonia image", command=loadRegularPneumoniaImageFromDialog)
-filemenu.add_command(label="Load Covid19 Pneumonia image", command=loadCovid19ImageFromDialog)
+filemenu.add_command(label="Load image to test for pneumonia", command=loadRegularPneumoniaImageFromDialog)
+filemenu.add_command(label="Load image to test for covid-19", command=loadCovid19ImageFromDialog)
+
+def colourDiagnosisMessageText ( diagnosisContent, startIndexText, endIndexText ):
+    #If pneumonia or covid19 is detected
+    if ( covid19_ai_diagnoser.DIAGNOSIS_MESSAGES[0] in diagnosisContent or covid19_ai_diagnoser.DIAGNOSIS_MESSAGES[1] in diagnosisContent ):
+        app.DIAGNOSIS_RESULT_FIELD.tag_add("DIAGNOSIS_RESULT_MESSAGE", startIndexText, endIndexText)
+        app.DIAGNOSIS_RESULT_FIELD.tag_configure("DIAGNOSIS_RESULT_MESSAGE", background="red", foreground ="white")
+
+    #If normal lungs state is detected
+    if ( covid19_ai_diagnoser.DIAGNOSIS_MESSAGES[2] in diagnosisContent ):
+        app.DIAGNOSIS_RESULT_FIELD.tag_add("DIAGNOSIS_RESULT_MESSAGE", startIndexText, endIndexText)
+        app.DIAGNOSIS_RESULT_FIELD.tag_configure("DIAGNOSIS_RESULT_MESSAGE", background="green", foreground ="white")
+        
+
+def enableDiagnosisResultColouring ( ):
+    diagnosisResultFieldContent = app.DIAGNOSIS_RESULT_FIELD.get("1.0","end")
+    colourDiagnosisMessageText ( diagnosisResultFieldContent, "4.0", "4.21" )
 
 ############
 #root cycle

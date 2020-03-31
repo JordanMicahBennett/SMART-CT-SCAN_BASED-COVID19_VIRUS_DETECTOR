@@ -6,6 +6,7 @@ import covid19_ai_diagnoser_optimal_model_architecture
 model_pneumoniaDetector = covid19_ai_diagnoser_optimal_model_architecture.model_pneumoniaDetector
 model_covid19PneumoniaDetector = covid19_ai_diagnoser_optimal_model_architecture.model_covid19PneumoniaDetector
 
+DIAGNOSIS_MESSAGES = [ "Pneumonia detected", "Covid19 detected", "Normal lungs detected" ]
 
 ###########################
 #Function written by Jordan to do online inference i.e. Regular Pneumonia tests
@@ -19,11 +20,11 @@ def doOnlineInference_regularPneumonia (imagePath):
     prediction = model_pneumoniaDetector.predict(covid19_ai_diagnoser_optimal_model_architecture.np.array(test_data))
     _prediction = round( prediction[0][0]*100, 3 )
     if ( _prediction > 50 ):
-        _prediction = "Pneumonia detected";
+        _prediction = DIAGNOSIS_MESSAGES[0];
     elif ( _prediction < 50 ):
-        _prediction = "Normal lungs detected";  
+        _prediction = DIAGNOSIS_MESSAGES[2];  
     outputContent = _prediction + "\n"
-    outputContent += "Raw Neural Network Output : " + str(prediction[0][0]) + "\n\n"
+    outputContent += "Raw Neural Network Output : " + str(prediction[0][0]) + ". A value closer to 1 signifies illness, while a value closer to 0 signifies normalness.\n\n"
     recordInferenceEvent (imagePath, outputContent)
     return outputContent
 
@@ -39,11 +40,11 @@ def doOnlineInference_covid19Pneumonia (imagePath):
     prediction = model_covid19PneumoniaDetector.predict(covid19_ai_diagnoser_optimal_model_architecture.np.array(test_data))
     _prediction = round( prediction[0][0]*100, 3 )
     if ( _prediction > 50 ):
-        _prediction = "Pneumonia detected";
+        _prediction = DIAGNOSIS_MESSAGES[1];
     elif ( _prediction < 50 ):
-        _prediction = "Normal lungs detected";  
+        _prediction = DIAGNOSIS_MESSAGES[2];  
     outputContent = _prediction + "\n"
-    outputContent += "Raw Neural Network Output : " + str(prediction[0][0]) + "\n\n"
+    outputContent += "Raw Neural Network Output : " + str(prediction[0][0]) + ". A value closer to 1 signifies illness, while a value closer to 0 signifies normalness.\n\n"
     recordInferenceEvent (imagePath, outputContent)
     return outputContent
 
@@ -70,8 +71,7 @@ doOnlineInference_regularPneumonia("xray_dataset/val/PNEUMONIA/person1946_bacter
 doOnlineInference_regularPneumonia("xray_dataset/val/PNEUMONIA/person1950_bacteria_4881.jpeg")
 
 ACTUAL CORONAVIRUS SAMPLES:
-doOnlineInference_regularPneumonia("coronavirus_positive_WeifangKong_et-al.jpg")
-doOnlineInference_regularPneumonia("coronavirus_positive_day7_of_infection_UPSCALED.jpg")
+doOnlineInference_covid19Pneumonia("coronavirus_positive_WeifangKong_et-al.jpg")
+doOnlineInference_covid19Pneumonia("coronavirus_positive_day7_of_infection_UPSCALED.jpg")
 """
-
 
