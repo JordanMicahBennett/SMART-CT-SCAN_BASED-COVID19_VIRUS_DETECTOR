@@ -22,6 +22,15 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 An optimal path is reasonably that the (~70% accurate) CDC standard polymerase method, and the (~75% to ~90% accurate) Artificial Intelligence based Xray method are used in concert.
 
+# 65th Annual Health Research Conference (Submission)
+![Alt Text](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/_____conference_submission_snippet.png?raw=true)
+
+Above is [my (March 30, 2020) paper submission](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/data/pdfs/%5BManuscript_Poster%5D%20Convolutional%20Artificial%20Neural%20Network%20for%20Covid19%20Diagnosis%2C%20from%20XRay%20images%20of%20lungs.pdf) to the 65th Annual Health Research Conference, organized by the Government of Jamaica and Caribbean Public Health Agency, based on my February 9, 2020 Covid19 Artificial Intelligence diagnostic model.
+
+65th Annual Health Research Conference: http://conference.carpha.org/
+
+
+
 # NON-COVID19 PNEUMONIA AND COVID19 PNEUMONIA DETECTION
 Based on suggestions by [Andrei Marinescu](https://www.facebook.com/ProgrammingGodJordan/posts/906357816489912), Jordan has updated this system such that it does both non-covid19 pneumonia detection and covid19 pneumonia detection, using separate convolutional neural network models, via two different droplist options seen below:
 
