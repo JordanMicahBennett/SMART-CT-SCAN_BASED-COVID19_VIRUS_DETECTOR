@@ -22,6 +22,8 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 * **Update: April 7, 2020**: [Only 6% of actual covid19 infections have been detected by countries worldwide, according to study cited in a new April 7, 2020 Medical Xpress article.](https://medicalxpress.com/news/2020-04-covid-average-actual-infections-worldwide.html)
 
+  * *This means that more than 10 million people could actually be infected by Covid19, contrary to the reported number of roughly 1.4 million cases.*
+
 An optimal path is reasonably that the (~70% accurate) CDC standard polymerase method, and the (~75% to ~90% accurate) Artificial Intelligence based Xray method are used in concert.
 
 # 65th Annual Health Research Conference (Submission)
