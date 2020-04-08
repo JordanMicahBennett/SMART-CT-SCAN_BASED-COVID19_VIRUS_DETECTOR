@@ -20,6 +20,8 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
 * On March 19, 2020, Epidemiologist Larry Brilliant, (helped to stop smallpox), [says we can beat the novel coronavirus—but first, we need lots more testing](https://www.wired.com/story/coronavirus-interview-larry-brilliant-smallpox-epidemiologist/). 
 
+* **Update: April 7, 2020**: [Only 6% of actual covid19 infections have been detected by countries worldwide, according to study cited in a new April 7, 2020 Medical Xpress article.](https://medicalxpress.com/news/2020-04-covid-average-actual-infections-worldwide.html)
+
 An optimal path is reasonably that the (~70% accurate) CDC standard polymerase method, and the (~75% to ~90% accurate) Artificial Intelligence based Xray method are used in concert.
 
 # 65th Annual Health Research Conference (Submission)
@@ -65,7 +67,6 @@ For the task of non-Covid19 pneumonia detection, the new code base has: Sensitiv
 * **March 22, 2020**: [Alexander et. al. release the 3rd known Open-Source Ai based Covid19 detector](https://github.com/lindawangg/COVID-Net), after [Jordan on Feb 9th](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR#smart-xray-ct--scan_based-covid19_virus_detector), then [Adrian on March 16](https://www.pyimagesearch.com/2020/03/16/detecting-covid-19-in-x-ray-images-with-keras-tensorflow-and-deep-learning/). Multi-class virus/bacterial/normal detection is performed, with 100%/80% in Sensitivity/Accuracy respectively in Covid19 detection task. 
   * Their March 22 method though multi-class-Deep Learning based, uses a similar method to my Feb 9, binary-class-Deep Learning method, that combined a kaggle-xray pneumonia dataset, with scarce Covid19 data.
   
-* **April 7, 2020**: [Only 6% of actual covid19 infections have been detected by countries worldwide, according to study cited in a new April 7, 2020 Medical Xpress article.](https://medicalxpress.com/news/2020-04-covid-average-actual-infections-worldwide.html)
 
 
 
