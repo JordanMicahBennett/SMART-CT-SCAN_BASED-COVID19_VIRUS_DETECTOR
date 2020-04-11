@@ -74,7 +74,7 @@ For the task of non-Covid19 pneumonia detection, the new code base has: Sensitiv
 
 
 # Xray Test Result Time versus Dna Method (Comparison)
-* Molecular and Serology Tests: Up to 2 days before testing is verified](https://en.wikipedia.org/wiki/COVID-19_testing#Direct_viral_tests).
+* Molecular and Serology Tests: [Up to 2 days before testing is verified](https://en.wikipedia.org/wiki/COVID-19_testing#Direct_viral_tests).
 * [Xray Image Scan + Artificial Intelligence Diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR): ~5 minutes ([for scan](https://www.ielcap.org/library/lung-cancer-screening/faqs)) + A few milliseconds for [Ai diagnosis](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR) = **~6 minutes total** time for diagnosis result including possible image processing. 
 
 
