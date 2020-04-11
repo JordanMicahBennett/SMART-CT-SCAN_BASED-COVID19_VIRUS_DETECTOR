@@ -56,6 +56,8 @@ For the task of non-Covid19 pneumonia detection, the new code base has: Sensitiv
 * **March 22, 2020**: [Alexander et. al. release the 3rd known Open-Source Ai based Covid19 detector](https://github.com/lindawangg/COVID-Net), after [Jordan on Feb 9th](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR#smart-xray-ct--scan_based-covid19_virus_detector), then [Adrian on March 16](https://www.pyimagesearch.com/2020/03/16/detecting-covid-19-in-x-ray-images-with-keras-tensorflow-and-deep-learning/). Multi-class virus/bacterial/normal detection is performed, with 100%/80% in Sensitivity/Accuracy respectively in Covid19 detection task. 
   * Their March 22 method though multi-class-Deep Learning based, uses a similar method to my Feb 9, binary-class-Deep Learning method, that combined a kaggle-xray pneumonia dataset, with scarce Covid19 data.
 
+* **April 3, 2020**: [Jeremy Kohn's](https://github.com/jeremykohn) curated list of all known open source image analysis Ai tools: [Radiological Image Data for Clinical Open-source Viral Infection Diagnosis](https://github.com/JordanMicahBennett/rid-covid). Also, [Jeremy Kohn](https://github.com/jeremykohn) is a data scientist who joined my project on March 18, 2020.
+
 
 # Xray Test Result Time versus Dna Method (Comparison)
 * Molecular and Serology Tests: **[~20 minutes](https://www.cdc.gov/coronavirus/2019-ncov/lab/rt-pcr-detection-instructions.html)** for equipment prep alone, for real-time polymerase chain reaction (RT-PCR), and up to **24 hours** before testing is verified. See **bullet point 3, in answer to question "Can someone who has had COVID-19 spread the illness to others?"** on [this CDC website/covid19 FAQ page.](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
