@@ -69,7 +69,7 @@ For the task of non-Covid19 pneumonia detection, the new code base has: Sensitiv
 * **March 22, 2020**: [Alexander et. al. release the 3rd known Open-Source Ai based Covid19 detector](https://github.com/lindawangg/COVID-Net), after [Jordan on Feb 9th](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR#smart-xray-ct--scan_based-covid19_virus_detector), then [Adrian on March 16](https://www.pyimagesearch.com/2020/03/16/detecting-covid-19-in-x-ray-images-with-keras-tensorflow-and-deep-learning/). Multi-class virus/bacterial/normal detection is performed, with 100%/80% in Sensitivity/Accuracy respectively in Covid19 detection task. 
   * Their March 22 method though multi-class-Deep Learning based, uses a similar method to my Feb 9, binary-class-Deep Learning method, that combined a kaggle-xray pneumonia dataset, with scarce Covid19 data.
   
-* **April 3, 2020**: [https://github.com/jeremykohn](Jeremy Kohn) curated list: [Radiological Image Data for Clinical Open-source Viral Infection Diagnosis](https://github.com/JordanMicahBennett/rid-covid). [https://github.com/jeremykohn](Jeremy Kohn) is also a data scientist who joined my project on March 18, 2020.
+* **April 3, 2020**: (Jeremy Kohn's](https://github.com/jeremykohn) curated list: [Radiological Image Data for Clinical Open-source Viral Infection Diagnosis](https://github.com/JordanMicahBennett/rid-covid). [https://github.com/jeremykohn](Jeremy Kohn) is also a data scientist who joined my project on March 18, 2020.
 
 
 
