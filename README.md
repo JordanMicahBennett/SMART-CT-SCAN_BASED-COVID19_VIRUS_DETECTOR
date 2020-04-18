@@ -24,6 +24,8 @@ As this is the first known attempt, [commencing on January 29 2020](https://gith
 
   * *This means that more than 10 million people could actually be infected by Covid19, contrary to the reported number of roughly 1.4 million cases.* This is yet another quite reasonable indication that far more testing is required.
 
+* **Update: April 17, 2020**: [A US county recorded 1,000 COVID-19 cases earlier this month, but blood tests suggest that more than 50,000 people there have been infected.](https://www.nature.com/articles/d41586-020-01095-0) This is yet another quite reasonable indication that far more testing is required.
+
 An optimal path is reasonably that the (~70% accurate) CDC standard polymerase method, and the (~75% to ~90% accurate) Artificial Intelligence based Xray method are used in concert.
 
 # 65th Annual Health Research Conference (Submission)
