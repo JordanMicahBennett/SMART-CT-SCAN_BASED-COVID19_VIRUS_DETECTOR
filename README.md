@@ -112,7 +112,7 @@ For the task of non-Covid19 pneumonia detection, the new code base has: Sensitiv
 3. [A pretrained neural network is chosen from google](https://github.com/JohnChangUK/Pneumonia-Kaggle), pertaining to (2). Pretrained model usage [is a way to avoid training on the 2 gigabytes of pneumonia/non-pneumonia training set](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/download).
     * I added a quick function "doOnlineInference" to [the code](https://github.com/JordanMicahBennett/SMART-CT-SCAN_BASED-COVID19_VIRUS_DETECTOR/blob/master/test_model_prediction.py). This is a convenient way to invoke diagnosis on input image.
 
-4. A covid-19 positive xray scan is taken from various covid19 papers, [such as this scan](//images.rsna.org/index.html?doi=10.1148/ryct.2020200028&fig=fig1a) of this [recent covid-19 paper](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200028).
+4. Covid-19 positive xray scans are taken from various covid19 papers, [such as this scan](//images.rsna.org/index.html?doi=10.1148/ryct.2020200028&fig=fig1a) of this [recent covid-19 paper](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200028).
 
 5. **Preliminary Conclusion**
     * This will reasonably work on potential mild-covid-19 pneumonia patients, within ~0 to 4 days of infection, with "repeated pulmonary CTs", where positive findings of pneumonia associated abnormalities are discoverable.
