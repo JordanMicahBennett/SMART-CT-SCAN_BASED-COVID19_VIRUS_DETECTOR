@@ -49,6 +49,10 @@ batch_size = 32
 #Util Component 1: Confusion matrix report/Accuracy measures
 from sklearn.metrics import accuracy_score, confusion_matrix
 
+#For graphical confusion metric
+import matplotlib.pyplot as plt 
+import seaborn as sns
+
 def renderConfusionMetrics ( ___model, _testData, _testLabels, enableTraining, ___train_gen, ___test_gen, __batch_size, __epochs, hdf5_testSaveFileName ):
     preds = ___model.predict(_testData)
 
@@ -56,6 +60,9 @@ def renderConfusionMetrics ( ___model, _testData, _testLabels, enableTraining, _
     cm = confusion_matrix(_testLabels, np.round(preds))
     tn, fp, fn, tp = cm.ravel()
 
+    plt.style.use("grayscale")
+    sns.heatmap(cm, annot=True, fmt='.0f', cmap='Blues_r')
+    plt.show()
 
     print('\nCONFUSION MATRIX FORMAT ------------------\n')
     print("[true positives    false positives]")
