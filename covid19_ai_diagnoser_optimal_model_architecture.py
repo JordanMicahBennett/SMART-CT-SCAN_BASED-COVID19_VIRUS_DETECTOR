@@ -3,13 +3,13 @@
 
 ######################
 # Jordan's modifications : 
-#1. Model training components removed. (Saved weight loading takes place instead)
-#2. Replace pyplot -> plt.imread, with  gray scale cv2.imread(path,0), so that ui's image load process doesn't throw a pyimage10 error
-#3. Other pyplot related code removed.
-#4. Confusion Matrix Format added, as quick explanation of Confusion Matrix that was already included.
-#5. Specificty calculation and relevant label added.
-#6. Many other modifications
-
+#1. Pneumonia model training components removed. (Saved weight loading takes place instead)
+#2. Covid19 training components added, atop pretrained model in (1).
+#3. Replace pyplot -> plt.imread, with  gray scale cv2.imread(path,0), so that ui's image load process doesn't throw a pyimage10 error
+#4. Other pyplot related code removed.
+#5. Confusion Matrix Format added, as quick explanation of Confusion Matrix that was already included.
+#6. Specificty calculation and relevant label added.
+#7. Many other modifications
 
 # General libraries
 import os
