@@ -35,7 +35,7 @@ Above is a snippet of [my (March 30, 2020) paper submission](https://github.com/
 
 65th Annual Health Research Conference: http://conference.carpha.org/
 
-
+See also [my more detailed manuscript on research gate.](https://www.researchgate.net/publication/341176434_World's_first_known_Open-Source_Machine_Learning_Convolutional_Artificial_Neural_Network_in_Covid19_XRay_Diagnosis_February_9_2020)
 
 # NON-COVID19 PNEUMONIA AND COVID19 PNEUMONIA DETECTION
 Based on suggestions by [Andrei Marinescu](https://www.facebook.com/ProgrammingGodJordan/posts/906357816489912), Jordan has updated this system such that it does both non-covid19 pneumonia detection and covid19 pneumonia detection, using separate convolutional neural network models, via two different droplist options seen below:
